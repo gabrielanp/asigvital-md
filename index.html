@@ -15,17 +15,29 @@
         }
 
         header {
-            background-color: #8335d9;
-            color: white;
             text-align: center;
-            padding: 1em;
+            padding: 2em;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #8335d9;
+            margin-bottom: 0.5em;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #333;
         }
 
         nav {
             display: flex;
             justify-content: center;
             background-color: #5834c8;
-            padding: 0.5em;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -37,10 +49,12 @@
 
         section {
             padding: 2em;
+            text-align: center;
         }
 
         section h2 {
             color: #8335d9;
+            margin-bottom: 1em;
         }
 
         footer {
@@ -55,8 +69,7 @@
 
     <header>
         <h1>Asigvital</h1>
-        <p>Asigurări Simplu. Rapid. Online.</p>
-        <p>Primul service complet digital din Republica Moldova. Asigurările online sunt emise instant și semnate electronic.</p>
+        <p>Siguranță cu stil. Asigurări care reflectă calitatea vieții tale.</p>
     </header>
 
     <nav>
@@ -64,8 +77,7 @@
         <a href="#carte-verde">Carte Verde</a>
         <a href="#rca">RCA</a>
         <a href="#medicala-facultativă">Medicala facultativă</a>
-        <a href="#ipoteca">Ipoteca</a>
-        <a href="#asigvital">Asigvital</a> <!-- Updated from "iAsig" -->
+        <a href="#despre-noi">Despre noi</a>
         <a href="#blog">Blog</a>
         <a href="#intrebari-frecvente">Întrebări frecvente</a>
     </nav>
@@ -78,11 +90,9 @@
 
     <!-- Add similar sections for other insurance types -->
 
-    <section id="asigvital">
-        <h2>Asigvital</h2> <!-- Updated from "iAsig" -->
-        <p>Orice asigurare direct de pe smartphone.</p>
-        <p>Polița de asigurare direct de pe smartphone. Orice poliță poate fi comandată, achitată și accesată ulterior direct de pe telefon.</p>
-        <p><a href="#" style="background-color: #8335d9; color: white; padding: 0.5em 1em; text-decoration: none; border-radius: 4px;">Comandă acum</a></p>
+    <section id="despre-noi">
+        <h2>Despre Noi</h2>
+        <!-- Add content about your company -->
     </section>
 
     <section id="blog">
@@ -100,10 +110,13 @@
 
     <section id="intrebari-frecvente">
         <h2>Întrebări frecvente</h2>
-        <p>Întrebări frecvente și răspunsuri.</p>
         <!-- Add FAQ dropdowns or content here -->
     </section>
 
     <footer>
         <p>Asigurare comandată online este valabilă instant?</p>
-        <p>Care sunt metodele disponibile de achitare?</
+        <p>Care sunt metodele disponibile de achitare?</p>
+    </footer>
+
+</body>
+</html>
