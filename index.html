@@ -10,7 +10,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-          
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -19,30 +18,89 @@
 
         header {
             display: flex;
-            align-items: center;
+            align-items: right;
             justify-content: space-between;
+            /*
             text-align: center;
-            padding: 0em;
+            line-height: 1.5;*/
             background-color: white;
+            
             color: #8335d9;
         }
-
+        header h1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em; 
+        }
+        header p {
+            text-align: center;
+            margin-left: 1cm;
+            padding: 0%;
+        }
         header img {
-            max-height: 200px; /* Adjust the height as needed */
-            
-            margin: 0.5cm;
+            height: 50px;
+            margin-left: 1cm;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+
+        .block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em; /* Adjust padding as needed */
+        }
+
+        .slogan {
+            font-size: 2.5em;
+            font-style: italic;
+            color: #8335d9;
+            margin-left: 2cm;
+        }
+
+        .contact-box {
+            text-align: center;
+            margin: 0; /* Adjust margin as needed */
+        }
+
+        .contact-box input {
+            width: 200px; /* Adjust width as needed */
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        .contact-box button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color: #5834c8;
+            color: white;
+            border: none;
             cursor: pointer;
         }
 
-        header h1 {
-            font-size: 1.5em;
-            margin: 0;
+        .hands-image {
+            max-width: 55%;
+            margin-left: 2em; /* Adjust margin as needed */
+            
+            border-radius: 15px; /* Adjust the border-radius for softer edges */
+            overflow: hidden;
+            position: relative;
+        }
+        .hands-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px; /* Match the border-radius with the parent div for consistency */
         }
 
-        header p {
-            font-size: 2em;
-            font-style: italic;
-            margin: 0;
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%; /* Adjust the width of the fading effect */
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff); /* Adjust the gradient colors as needed */
         }
 
         nav {
@@ -75,7 +133,6 @@
         .insurances p {
             font-size: 1.2em;
         }
-     
 
         footer {
             background-color: #5834c8;
@@ -86,17 +143,37 @@
     </style>
 </head>
 <body>
-
     <header>
         <a href="https://gabrielanp.github.io/asigvital-md/" target="_blank">
-            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo"> <!-- Replace "asigvital.jpg" with the actual file path -->
+            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
+           
         </a>
         <div>
-            
-            <p>Siguranță cu stil. Asigurări care reflectă calitatea vieții tale.</p>
-           
+            <p>Contact: +37379516908 +37379516908<br/>
+                Email: info@asigvital.md</p>
         </div>
     </header>
+    <div class="block">
+        <div>
+            <p class="slogan">Asigvital - Siguranță cu stil. <br/>Asigurări care reflectă calitatea vieții tale.</p>
+
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Email">
+                    <button type="submit">Contactează-ne</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Hands Image -->
+        <div class="hands-image">
+            <div class="gradient-overlay"></div>
+            <img src="hands.jpg" alt="Hands Image">
+        </div>
+    </div>
+
+    <!-- Your existing HTML content goes here -->
 
     <nav>
         <a href="medicala-călătorii.html" target="_blank">Medicala pentru călătorii</a>
@@ -118,9 +195,15 @@
     </div>
 
     <footer>
-        <p>Asigurare comandată online este valabilă instant?</p>
-        <p>Care sunt metodele disponibile de achitare?</p>
+        <div>
+            <p>&copy; <span id="currentYear"></span> BAR Asigvital SRL. All rights reserved.</p>
+            <p><a href="/about-us.html">Despre Noi</a></p>
+        </div>
     </footer>
 
+    <!-- JavaScript code to dynamically set the current year -->
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
