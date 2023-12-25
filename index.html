@@ -10,24 +10,39 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f5f5f5;
+          
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: #333;
         }
 
         header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             text-align: center;
-            padding: 2em;
+            padding: 0em;
+            background-color: white;
+            color: #8335d9;
+        }
+
+        header img {
+            max-height: 200px; /* Adjust the height as needed */
+            
+            margin: 0.5cm;
+            cursor: pointer;
         }
 
         header h1 {
-            font-size: 3em;
-            color: #8335d9;
-            margin-bottom: 0.5em;
+            font-size: 1.5em;
+            margin: 0;
         }
 
         header p {
-            font-size: 1.5em;
-            color: #333;
+            font-size: 2em;
+            font-style: italic;
+            margin: 0;
         }
 
         nav {
@@ -47,15 +62,20 @@
             margin: 0 1em;
         }
 
-        section {
-            padding: 2em;
+        .insurances {
             text-align: center;
+            padding: 2em;
         }
 
-        section h2 {
+        .insurances h2 {
             color: #8335d9;
             margin-bottom: 1em;
         }
+
+        .insurances p {
+            font-size: 1.2em;
+        }
+     
 
         footer {
             background-color: #5834c8;
@@ -68,50 +88,34 @@
 <body>
 
     <header>
-        <h1>Asigvital</h1>
-        <p>Siguranță cu stil. Asigurări care reflectă calitatea vieții tale.</p>
+        <a href="https://gabrielanp.github.io/asigvital-md/" target="_blank">
+            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo"> <!-- Replace "asigvital.jpg" with the actual file path -->
+        </a>
+        <div>
+            
+            <p>Siguranță cu stil. Asigurări care reflectă calitatea vieții tale.</p>
+           
+        </div>
     </header>
 
     <nav>
-        <a href="#medicala-călătorii">Medicala pentru călătorii</a>
-        <a href="#carte-verde">Carte Verde</a>
-        <a href="#rca">RCA</a>
-        <a href="#medicala-facultativă">Medicala facultativă</a>
-        <a href="#despre-noi">Despre noi</a>
-        <a href="#blog">Blog</a>
-        <a href="#intrebari-frecvente">Întrebări frecvente</a>
+        <a href="medicala-călătorii.html" target="_blank">Medicala pentru călătorii</a>
+        <a href="carte-verde.html" target="_blank">Carte Verde</a>
+        <a href="rca.html" target="_blank">RCA</a>
+        <a href="medicala-facultativă.html" target="_blank">Medicala facultativă</a>
+        <a href="despre-noi.html" target="_blank">Despre noi</a>
+        <a href="blog.html" target="_blank">Blog</a>
+        <a href="intrebari-frecvente.html" target="_blank">Întrebări frecvente</a>
     </nav>
 
-    <section id="medicala-călătorii">
-        <h2>Medicala pentru călătorii</h2>
-        <p>Pentru rezidenți, valabilă peste hotare.</p>
-        <p><a href="#" style="background-color: #5834c8; color: white; padding: 0.5em 1em; text-decoration: none; border-radius: 4px;">Comandă</a></p>
-    </section>
-
-    <!-- Add similar sections for other insurance types -->
-
-    <section id="despre-noi">
-        <h2>Despre Noi</h2>
-        <!-- Add content about your company -->
-    </section>
-
-    <section id="blog">
-        <h2>Blog</h2>
-        <article>
-            <h3>Acțiuni în caz de accident</h3>
-            <p>De aceasta data as vrea sa-ti explic cum trebuie sa procedezi in caz de accident, indiferent daca esti sau nu vinovat...</p>
-            <p><a href="#" style="color: #8335d9; text-decoration: none;">Mai mult</a></p>
-        </article>
-
-        <!-- Add more blog articles as needed -->
-
-        <p><a href="#" style="background-color: #5834c8; color: white; padding: 0.5em 1em; text-decoration: none; border-radius: 4px;">Vezi toate</a></p>
-    </section>
-
-    <section id="intrebari-frecvente">
-        <h2>Întrebări frecvente</h2>
-        <!-- Add FAQ dropdowns or content here -->
-    </section>
+    <div class="insurances">
+        <h2>Tipuri de Asigurări</h2>
+        <p>RCA</p>
+        <p>Cartea Verde</p>
+        <p>Medicala peste hotare</p>
+        <p>Casco</p>
+        <p>Medicala facultativă</p>
+    </div>
 
     <footer>
         <p>Asigurare comandată online este valabilă instant?</p>
