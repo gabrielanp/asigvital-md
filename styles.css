@@ -1,0 +1,176 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: right;
+            justify-content: space-between;
+            background-color: white;
+            margin: 0%;
+            color: #4636c5;
+        }
+
+        header h1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em;
+        }
+
+        header p {
+            text-align: center;
+            margin-left: 1cm;
+            padding: 0%;
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 1cm;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+
+        .block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            /* Adjust padding as needed */
+        }
+
+        .slogan {
+            font-size: 2.5em;
+            font-style: italic;
+            color: #4636c5;
+            margin-left: 2cm;
+        }
+
+        .contact-box {
+            text-align: center;
+            margin: 0;
+            /* Adjust margin as needed */
+        }
+
+        .contact-box input {
+            width: 200px;
+            /* Adjust width as needed */
+            padding: 0.5em;
+            font-size: 1em;
+        }
+
+        .contact-box button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color: #4636c5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hands-image {
+            max-width: 55%;
+            margin-left: 2em;
+            /* Adjust margin as needed */
+            border-radius: 15px;
+            /* Adjust the border-radius for softer edges */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hands-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            /* Match the border-radius with the parent div for consistency */
+        }
+
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            /* Adjust the width of the fading effect */
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+            /* Adjust the gradient colors as needed */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #4636c5;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        .insurances {
+            text-align: center;
+            padding: 2em;
+            background-color: #5834c8;
+            display: flex;
+            /* Display insurance blocks next to each other */
+            justify-content: space-between;
+        }
+
+        .insurance-block {
+            flex: 1;
+            margin: 0 1em;
+            /* Adjust margin as needed */
+        }
+
+        .insurances h2 {
+            color: #5834c8;
+            margin-bottom: 1em;
+        }
+
+        .insurances p {
+            font-size: 1.2em;
+        }
+
+        .insurance-block {
+            flex: 1;
+            margin: 0 1em;
+            /* Adjust margin as needed */
+            background-color: white;
+            padding: 1em;
+            border-radius: 8px; /* Add border-radius for rounded corners */
+        }
+        .insurance-block img {
+            max-width: 50px; /* Adjust the maximum width of the image */
+            margin-bottom: 1em;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2em;
+            overflow: hidden;
+        }
+
+        .testimonial-block {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 1em;
+            text-align: center;
+            background-color: #f2f2f2;
+            border-radius: 8px;
+            margin-right: 1em;
+        }

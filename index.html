@@ -1,161 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Asigvital </title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #333;
-        }
-
-        header {
-            display: flex;
-            align-items: right;
-            justify-content: space-between;
-            /*
-            text-align: center;
-            line-height: 1.5;*/
-            background-color: white;
-            
-            color: #8335d9;
-        }
-        header h1{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2em; 
-        }
-        header p {
-            text-align: center;
-            margin-left: 1cm;
-            padding: 0%;
-        }
-        header img {
-            height: 50px;
-            margin-left: 1cm;
-            cursor: pointer;
-            margin-top: 1em;
-        }
-
-        .block {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2em; /* Adjust padding as needed */
-        }
-
-        .slogan {
-            font-size: 2.5em;
-            font-style: italic;
-            color: #8335d9;
-            margin-left: 2cm;
-        }
-
-        .contact-box {
-            text-align: center;
-            margin: 0; /* Adjust margin as needed */
-        }
-
-        .contact-box input {
-            width: 200px; /* Adjust width as needed */
-            padding: 0.5em;
-            font-size: 1em;
-        }
-
-        .contact-box button {
-            padding: 0.5em 1em;
-            font-size: 1em;
-            background-color: #5834c8;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .hands-image {
-            max-width: 55%;
-            margin-left: 2em; /* Adjust margin as needed */
-            
-            border-radius: 15px; /* Adjust the border-radius for softer edges */
-            overflow: hidden;
-            position: relative;
-        }
-        .hands-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 15px; /* Match the border-radius with the parent div for consistency */
-        }
-
-        .gradient-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%; /* Adjust the width of the fading effect */
-            height: 100%;
-            background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff); /* Adjust the gradient colors as needed */
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #5834c8;
-            padding: 1em;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1em;
-            margin: 0 1em;
-        }
-
-        .insurances {
-            text-align: center;
-            padding: 2em;
-        }
-
-        .insurances h2 {
-            color: #8335d9;
-            margin-bottom: 1em;
-        }
-
-        .insurances p {
-            font-size: 1.2em;
-        }
-
-        footer {
-            background-color: #5834c8;
-            color: white;
-            text-align: left;
-            padding: 1em;
-        }
-    </style>
+    
 </head>
+
 <body>
     <header>
         <a href="https://gabrielanp.github.io/asigvital-md/" target="_blank">
             <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
-           
         </a>
         <div>
-            <p>Contact: +37379516908 +37379516908<br/>
+            <p>Contact: +37379516908 +37379516908<br />
                 Email: info@asigvital.md</p>
         </div>
     </header>
+    <nav>
+        <a href="produse.html" target="_blank">Produse</a>
+        <a href="persoane.html" target="_blank">Persoane</a>
+        <a href="VIP.html" target="_blank">VIP</a>
+        <a href="legal.html" target="_blank">Legal</a>
+        <a href="despre-noi.html" target="_blank">Despre noi</a>
+        <a href="blog.html" target="_blank">Blog</a>
+        <a href="intrebari-frecvente.html" target="_blank">Întrebări frecvente</a>
+    </nav>
     <div class="block">
         <div>
-            <p class="slogan">Asigvital - Siguranță cu stil. <br/>Asigurări care reflectă calitatea vieții tale.</p>
+            <p class="slogan">Asigvital - Siguranță cu stil. <br />Asigurări care reflectă calitatea vieții tale.</p>
 
             <!-- Contact Box -->
             <div class="contact-box">
@@ -173,25 +49,52 @@
         </div>
     </div>
 
-    <!-- Your existing HTML content goes here -->
-
-    <nav>
-        <a href="medicala-călătorii.html" target="_blank">Medicala pentru călătorii</a>
-        <a href="carte-verde.html" target="_blank">Carte Verde</a>
-        <a href="rca.html" target="_blank">RCA</a>
-        <a href="medicala-facultativă.html" target="_blank">Medicala facultativă</a>
-        <a href="despre-noi.html" target="_blank">Despre noi</a>
-        <a href="blog.html" target="_blank">Blog</a>
-        <a href="intrebari-frecvente.html" target="_blank">Întrebări frecvente</a>
-    </nav>
-
+    <!-- Insurances Section -->
     <div class="insurances">
-        <h2>Tipuri de Asigurări</h2>
-        <p>RCA</p>
-        <p>Cartea Verde</p>
-        <p>Medicala peste hotare</p>
-        <p>Casco</p>
-        <p>Medicala facultativă</p>
+        <!-- Insurance Blocks -->
+        <div class="insurance-block">
+            <img src="auto.png" alt="Auto Icon">
+            <h2>Asigurari Auto</h2>
+            <p>Asigurare RCA</p>
+            <p>Asigurare Cartea Verde</p>
+            <p>Casco</p>
+        </div>
+
+        <div class="insurance-block">
+            <img src="persons.png" alt="Auto Icon">
+            <h2>Asigurari Persoane</h2>
+            <p>Medicala peste hotare</p>
+            <p>Asigurare de accidente</p>
+            <p>Medicala facultativă</p>
+        </div>
+
+        <div class="insurance-block">
+            <img src="house.png" alt="Auto Icon">
+            <h2>Asigurari Bunuri</h2>
+            
+            <p>Asigurare complexa a locuintei</p>
+            <p>Asigurare bunuri mobile si imobile</p>
+            <p>Lucrari de constructie montaj</p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials">
+        <!-- Testimonial Blocks -->
+        <div class="testimonial-block">
+            <h2>Testimonial 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="testimonial-block">
+            <h2>Testimonial 2</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+        <div class="testimonial-block">
+            <h2>Testimonial 3</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
     </div>
 
     <footer>
@@ -206,4 +109,5 @@
         document.getElementById("currentYear").innerHTML = new Date().getFullYear();
     </script>
 </body>
+
 </html>
