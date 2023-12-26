@@ -43,7 +43,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1em;
+            padding: 2em;
             /* Adjust padding as needed */
         }
 
@@ -52,6 +52,7 @@
             font-style: italic;
             color: #4636c5;
             margin-left: 2cm;
+            padding: 0%;
         }
 
         .contact-box {
@@ -123,7 +124,7 @@
 
         .insurances {
             text-align: center;
-            padding: 2em;
+            padding: 7em;
             background-color: #5834c8;
             display: flex;
             /* Display insurance blocks next to each other */
@@ -165,6 +166,11 @@
             overflow: hidden;
             margin-top: 20px; /* Adjust as needed */
             position: relative;
+        }
+        .testimonial-block img {
+            max-width: 100%; /* Make sure the image doesn't exceed the container width */
+            border-radius: 50%; /* Optional: Add border-radius for a circular image */
+            margin-bottom: 10px;
         }
         
         .arrow-button {
