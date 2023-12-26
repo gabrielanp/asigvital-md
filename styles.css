@@ -1,4 +1,4 @@
-@media only screen and (min-width : 1224px) {
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -195,9 +195,3 @@
         footer a:hover {
             text-decoration: underline;
         }
-    }
-    @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-}
