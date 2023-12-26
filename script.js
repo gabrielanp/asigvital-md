@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Set interval for automatic movement
-    const intervalId = setInterval(autoMoveTestimonials, 5000);
+    const intervalId = setInterval(autoMoveTestimonials, 6000);
 
     // Button event listeners
     document.querySelector('.next-button').addEventListener('click', function () {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     testimonialsContainer.addEventListener('mouseout', function () {
-        intervalId = setInterval(autoMoveTestimonials, 5000);
+        intervalId = setInterval(autoMoveTestimonials, 6000);
     });
 
     updateTestimonials(); // Initial update
