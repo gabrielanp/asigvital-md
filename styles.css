@@ -158,14 +158,42 @@
             margin-bottom: 1em;
         }
 
+        /* Testimonials Section Styles */
+        /* Testimonials Section Styles */
         .testimonials {
             display: flex;
             overflow: hidden;
+            margin-top: 20px; /* Adjust as needed */
+            position: relative;
+        }
+        
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #4636c5;
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 2; /* Ensure buttons appear above testimonial container */
+        }
+        
+        .prev-button {
+            left: 0;
+        }
+        
+        .next-button {
+            right: 0;
         }
         
         .testimonial-container {
-            display: flex; /* Allow for horizontal arrangement */
-            transition: transform 0.5s ease; /* Add smooth transition for carousel effect */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Ensure the container takes full width */
+            margin: 0 auto; /* Center the container horizontally */
         }
         
         .testimonial-block {
@@ -178,12 +206,13 @@
         .testimonial-block h2 {
             margin-bottom: 10px;
         }
+        
         /* Add this CSS code to your styles.css file */
 
         footer {
             background-color: #5834c8;
             color: #fff;
-            padding: 0px;
+            padding: 10px;
             text-align: center;
         }
 
