@@ -61,3 +61,35 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// script.js
+function calculateInsurance() {
+    var coverageType = document.getElementById("coverageType").value;
+    var vehicleValue = parseFloat(document.getElementById("vehicleValue").value);
+    var duration = parseInt(document.getElementById("duration").value);
+
+    if (isNaN(vehicleValue) || isNaN(duration)) {
+        alert("Please enter valid numbers for Vehicle Value and Policy Duration.");
+        return;
+    }
+
+    var basePrice;
+
+    switch (coverageType) {
+        case "basic":
+            basePrice = 100;
+            break;
+        case "standard":
+            basePrice = 200;
+            break;
+        case "premium":
+            basePrice = 300;
+            break;
+        default:
+            alert("Invalid coverage type selected.");
+            return;
+    }
+
+    var estimatedPrice = basePrice * (vehicleValue / 1000) * duration;
+
+    document.getElementById("result").innerText = estimatedPrice.toFixed(2);
+}

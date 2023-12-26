@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="legal.css"> <!-- Add a new CSS file for produse styling -->
+    <link rel="stylesheet" href="despre-noi.css"> <!-- Add a new CSS file for produse styling -->
 
     <title>Asigvital</title>
 </head>
 
-<body class="legal-page">
+<body class="despre-noi-page">
     <header>
         <a href="https://gabrielanp.github.io/asigvital-md/" target="_blank">
             <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
@@ -25,12 +25,31 @@
         <a href="produse.html" target="_blank">Produse</a>
         <a href="persoane.html" target="_blank">Persoane</a>
         <a href="VIP.html" target="_blank">VIP</a>
-        <a class="legal" href="legal.html" target="_blank">Legal</a>
+        <a  href="legal.html" target="_blank">Legal</a>
         <a href="despre-noi.html" target="_blank">Despre noi</a>
         <a href="blog.html" target="_blank">Blog</a>
         <a href="intrebari-frecvente.html" target="_blank">Întrebări frecvente</a>
     </nav>
-    <!-- Rest of your content -->
+    <!-- Insurance Calculator Section -->
+    <div class="calculator">
+        <h2>Calculator CASCO</h2>
+        <label for="coverageType">Tipul de asigurare</label>
+        <select id="coverageType">
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <label for="vehicleValue">Valoarea Vehiculului:</label>
+        <input type="number" id="vehicleValue" placeholder="Valoarea Vehiculului" />
+
+        <label for="duration">Durata:</label>
+        <input type="number" id="duration" placeholder="Durata politei" />
+
+        <button onclick="calculateInsurance()">Calculati</button>
+
+        <h3>Pretul Estimat: lei<span id="result">0.00</span></h3>
+    </div>
 </body>
 
 </html>
