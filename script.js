@@ -50,3 +50,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateTestimonials(); // Initial update
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+        const linkPage = link.href.split('/').pop();
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});

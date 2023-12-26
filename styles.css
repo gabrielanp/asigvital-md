@@ -114,13 +114,21 @@
             top: 0;
             z-index: 1000;
         }
-
+        
         nav a {
             color: #4636c5;
             text-decoration: none;
             padding: 1em;
             margin: 0 1em;
         }
+        
+        /* Style for the active link */
+        nav a.active {
+            background-color: #4636c5;
+            color: white;
+            border-radius: 8px; /* Add border-radius for rounded corners */
+        }
+        
 
         .insurances {
             text-align: center;
