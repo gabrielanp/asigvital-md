@@ -1,0 +1,9 @@
+/* produse.css */
+
+body.VIP-page nav a.VIP {
+    /* Styling for the "Produse" link in the navigation bar on produse.html */
+    border: 2px solid #4636c5;
+    border-radius: 8px; /* Adding border-radius for rounded corners */
+    padding: 8px 16px; /* Adjust padding for better spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
+}
