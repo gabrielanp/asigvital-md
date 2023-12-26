@@ -1,21 +1,31 @@
-// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    const testimonialsContainer = document.querySelector('.testimonials');
+    const testimonialBlocks = document.querySelectorAll('.testimonial-block');
+    const totalTestimonials = testimonialBlocks.length;
+    const testimonialsPerPage = 3;
 
-let currentTestimonial = 0;
+    let currentIndex = 0;
 
-function showTestimonial(index) {
-    const testimonials = document.querySelectorAll('.testimonial-block');
-    testimonials[currentTestimonial].classList.remove('testimonial-active');
-    currentTestimonial = (index + testimonials.length) % testimonials.length;
-    testimonials[currentTestimonial].classList.add('testimonial-active');
-}
+    function updateTestimonials() {
+        testimonialBlocks.forEach((block, index) => {
+            const position = (index - currentIndex + totalTestimonials) % totalTestimonials;
+            block.style.display = position < testimonialsPerPage ? 'inline-block' : 'none';
+        });
+    }
 
-function nextTestimonial() {
-    showTestimonial(currentTestimonial + 1);
-}
+    function moveTestimonials() {
+        currentIndex = (currentIndex + 1) % totalTestimonials;
+        updateTestimonials();
+    
+        // Check if we have reached the last testimonial, and reset to the first one
+        if (currentIndex === totalTestimonials - testimonialsPerPage) {
+            setTimeout(() => {
+                currentIndex = 0;
+                updateTestimonials();
+            }, 500);
+        }
+    }
 
-function prevTestimonial() {
-    showTestimonial(currentTestimonial - 1);
-}
-
-// Auto-advance testimonials every 5 seconds
-setInterval(nextTestimonial, 5000);
+    setInterval(moveTestimonials, 5000);
+    updateTestimonials(); // Initial update
+});

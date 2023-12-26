@@ -1,4 +1,4 @@
-
+@media only screen and (min-width : 1224px) {
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -160,17 +160,108 @@
 
         .testimonials {
             display: flex;
-            justify-content: space-between;
-            margin-top: 2em;
             overflow: hidden;
         }
-
-        .testimonial-block {
-            flex: 1;
-            box-sizing: border-box;
-            padding: 1em;
-            text-align: center;
-            background-color: #f2f2f2;
-            border-radius: 8px;
-            margin-right: 1em;
+        
+        .testimonial-container {
+            display: flex; /* Allow for horizontal arrangement */
+            transition: transform 0.5s ease; /* Add smooth transition for carousel effect */
         }
+        
+        .testimonial-block {
+            flex: 0 0 33.33%; /* Set each block to take up 33.33% of the container */
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .testimonial-block h2 {
+            margin-bottom: 10px;
+        }
+        /* Add this CSS code to your styles.css file */
+
+        footer {
+            background-color: #5834c8;
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    }
+    @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    header {
+        align-items: center; /* Center items horizontally */
+    }
+
+    header h1 {
+        padding: 1em; /* Adjust padding */
+    }
+
+    header img {
+        margin-top: 0; /* Adjust margin */
+    }
+
+    .block {
+        padding: 1em;
+    }
+
+    .slogan {
+        font-size: 1.5em; /* Adjust font size */
+        margin-left: 0; /* Remove margin */
+        text-align: center;
+    }
+
+    .contact-box input,
+    .contact-box button {
+        width: 100%; /* Make input and button full width */
+    }
+
+    .hands-image {
+        margin: 1em 0; /* Add margin */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation items in a column */
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5em 0; /* Add vertical margin */
+    }
+
+    .insurances {
+        padding: 1em;
+        flex-direction: column; /* Stack insurance blocks in a column */
+        align-items: center;
+    }
+
+    .insurance-block {
+        margin: 0.5em;
+    }
+
+    .insurances h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .insurances p {
+        font-size: 1em;
+    }
+
+    .testimonials {
+        flex-direction: column; /* Stack testimonials in a column */
+    }
+
+    .testimonial-block {
+        padding: 10px; /* Adjust padding */
+    }
+}
