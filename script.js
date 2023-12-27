@@ -51,3 +51,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateTestimonials(); // Initial update
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const logoCarousel = document.querySelector('.logo-carousel');
+    const logoWidth = document.querySelector('.logo-container').offsetWidth;
+    const logosCount = document.querySelectorAll('.logo-container').length;
+
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        logoCarousel.style.transition = 'transform 1s ease-in-out';
+        logoCarousel.style.transform = `translateX(${-currentIndex * logoWidth}px)`;
+    }
+
+    function moveCarousel() {
+        currentIndex++;
+
+        // Check if it's time to loop back to the start
+        if (currentIndex >= logosCount) {
+            // Move instantly to the right side without animation
+            logoCarousel.style.transition = 'none';
+            currentIndex = 0;
+            updateCarousel();
+
+            // Reset the transition for the next movements
+            setTimeout(() => {
+                logoCarousel.style.transition = 'transform 1s ease-in-out';
+            }, 0);
+        } else {
+            updateCarousel();
+        }
+    }
+
+    setInterval(moveCarousel, 5000); // Move every 5 seconds
+
+    // Ensure the updateCarousel function is called initially
+    updateCarousel();
+});
+
+
+

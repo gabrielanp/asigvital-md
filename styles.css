@@ -308,3 +308,55 @@
         color: #5834c8;
         margin-top: 20px;
     }
+   
+    
+    .parteneri {
+        text-align: center;
+        color: #333;
+        font-size: 3em; /* Corrected property from 'size' to 'font-size' */
+    }
+    
+    .client-logos {
+        overflow: hidden;
+    }
+    
+    .logo-carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .logo-container {
+        flex: 0 0 auto;
+        margin: 0 10px; /* Add margin to separate logos */
+    }
+    
+    .logo-container img {
+        max-height: 100px; /* Set maximum height for images */
+        width: auto; /* Allow the width to adjust proportionally */
+    }
+    
+    
+    /* Add this CSS code to your styles.css file */
+    .purple-block {
+        background-color: #5834c8;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        margin-top: 20px; /* Adjust as needed */
+        text-align: center;
+    }
+    
+    .box {
+        flex: 0 0 30%; /* Set each box to take up 30% of the container */
+        box-sizing: border-box;
+        height: 100px; /* Set the height of the boxes as needed */
+        background-color: inherit; /* Set the background color of the boxes to inherit from the parent block */
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Set text color to white */
+        font-size: 1.5em; /* Set font size as needed */
+        
+    }
+    
