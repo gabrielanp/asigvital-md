@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateTestimonials(); // Initial update
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const logoCarousel = document.querySelector('.logo-carousel');
     const logoWidth = document.querySelector('.logo-container').offsetWidth;
     const logosCount = document.querySelectorAll('.logo-container').length;
@@ -87,7 +87,70 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ensure the updateCarousel function is called initially
     updateCarousel();
+});*/
+
+function calculateInsurance() {
+    var coverageType = document.getElementById("coverageType").value;
+    var vehicleValue = parseFloat(document.getElementById("vehicleValue").value);
+    var duration = parseInt(document.getElementById("duration").value);
+
+    if (isNaN(vehicleValue) || isNaN(duration)) {
+        alert("Please enter valid numbers for Vehicle Value and Policy Duration.");
+        return;
+    }
+
+    var basePrice;
+
+    switch (coverageType) {
+        case "basic":
+            basePrice = 100;
+            break;
+        case "standard":
+            basePrice = 200;
+            break;
+        case "premium":
+            basePrice = 300;
+            break;
+        default:
+            alert("Invalid coverage type selected.");
+            return;
+    }
+
+    var estimatedPrice = basePrice * (vehicleValue / 1000) * duration;
+
+    document.getElementById("result").innerText = estimatedPrice.toFixed(2);
+}
+
+
+// Show/hide hamburger icon based on screen width
+function checkScreenWidth() {
+    var menuIcon = document.querySelector('.menu-icon');
+    var nav = document.querySelector('nav ul');
+
+    if (window.innerWidth <= 768) {
+        menuIcon.style.display = 'block';
+        nav.style.display = 'none';
+    } else {
+        menuIcon.style.display = 'none';
+        nav.style.display = 'flex';
+    }
+}
+
+// Initial check on page load
+checkScreenWidth();
+
+// Check and update on window resize
+window.addEventListener('resize', checkScreenWidth);
+// Add this to your existing JavaScript code
+function toggleMenu() {
+    var nav = document.querySelector('#main-nav');
+    nav.classList.toggle('open');
+}
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.querySelector('.menu-icon');
+    menuIcon.addEventListener('click', toggleMenu);
 });
 
-
-
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();

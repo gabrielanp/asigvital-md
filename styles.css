@@ -38,12 +38,63 @@
             background-color: #4636c5;
             padding: 10px;
             box-sizing: border-box;
-            border-radius: 10px;
+            border-radius: 20px;
             display: flex; /* Added to align content horizontally */
             align-items: center; /* Added to align content vertically */
         }
 
-
+        .contact-buttons-container {
+            display: flex;
+            /* Adjust as needed for spacing */
+        }
+        
+        .contact-email {
+            text-align: center;
+            margin-left: 2cm;
+            margin-right: 0.5cm;
+            padding: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #4636c5;
+            background-color: #4636c5;
+            box-sizing: border-box;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+        }
+        .afla {
+            text-align: center;
+            margin-left: 2cm;
+            margin-right: 0.5cm;
+            padding: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #4636c5;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 150px;
+        }
+      
+        
+        .afla a {
+            color: #464646;
+            text-decoration: none;
+        }
+       
+        
+        .contact-email a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+       
+        
+        
 
         header img {
             height: 50px;
@@ -62,10 +113,13 @@
             margin-top: 0em;
         }
         .block {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns */
+            gap: 0px; /* Adjust the gap between grid items */
             justify-content: space-between;
             align-items: center;
             padding: 2em;
+            height: 500px;
             /* Adjust padding as needed */
         }
 
@@ -100,7 +154,7 @@
         }
 
         .hands-image {
-            max-width: 55%;
+            max-width: 100%;
             margin-left: 2em;
             /* Adjust margin as needed */
             border-radius: 15px;
@@ -156,7 +210,9 @@
             text-align: center;
             padding: 7em;
             background-color: #5834c8;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 20px; /* Adjust the gap between grid items */
             /* Display insurance blocks next to each other */
             justify-content: space-between;
         }
@@ -187,8 +243,7 @@
             font-size: 1.2em;
             margin-top: 0.5em; /* Adjust as needed */
         }
-        
-        /* Testimonials Section Styles */
+            
         /* Testimonials Section Styles */
         .testimonials {
             display: flex;
@@ -241,6 +296,8 @@
         .testimonial-block h2 {
             margin-bottom: 10px;
         }
+        
+
         
         /* Add this CSS code to your styles.css file */
 
@@ -313,7 +370,7 @@
     .parteneri {
         text-align: center;
         color: #333;
-        font-size: 3em; /* Corrected property from 'size' to 'font-size' */
+        font-size: 2em; /* Corrected property from 'size' to 'font-size' */
     }
     
     .client-logos {
@@ -321,7 +378,9 @@
     }
     
     .logo-carousel {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* Eight equal columns */
+        gap: 10px; /* Adjust the gap between logos */
         transition: transform 0.5s ease-in-out;
     }
     
@@ -339,11 +398,14 @@
     /* Add this CSS code to your styles.css file */
     .purple-block {
         background-color: #5834c8;
-        display: flex;
+       
         justify-content: space-between;
         padding: 20px;
         margin-top: 20px; /* Adjust as needed */
         text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+        gap: 20px; /* Adjust the gap between grid items */
     }
     
     .box {
@@ -359,4 +421,5 @@
         font-size: 1.5em; /* Set font size as needed */
         
     }
+    
     
