@@ -16,7 +16,7 @@
             justify-content: space-between;
             background-color: white;
             margin: 0%;
-            color: #4636c5;
+            color: #ffffff;
         }
 
         header h1 {
@@ -29,16 +29,33 @@
         header p {
             text-align: center;
             margin-left: 1cm;
+            margin-right: 0.5cm;
             padding: 0%;
+            font-size: 1em;
+            font-weight: bold;
+            border: 2px solid #4636c5; /* Add a border with color */
+            background-color:#4636c5;
+            padding: 10px; /* Add padding for spacing inside the box */
+            box-sizing: border-box;
+            border-radius: 10px;
         }
 
         header img {
             height: 50px;
-            margin-left: 1cm;
+            margin-left: 1.5cm;
             cursor: pointer;
             margin-top: 1em;
         }
-
+        header a {
+            color: inherit; /* Inherit the text color from the parent (white in this case) */
+            text-decoration: none; /* Remove underline style */
+          }
+        .phone {
+            height: 20px;
+            margin-left: 0cm;
+            
+            margin-top: 0em;
+        }
         .block {
             display: flex;
             justify-content: space-between;
