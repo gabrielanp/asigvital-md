@@ -26,6 +26,7 @@
             padding: 2em;
         }
 
+        /* Adjusted styles for the phone box in the header */
         header p {
             text-align: center;
             margin-left: 1cm;
@@ -33,12 +34,16 @@
             padding: 0%;
             font-size: 1em;
             font-weight: bold;
-            border: 2px solid #4636c5; /* Add a border with color */
-            background-color:#4636c5;
-            padding: 10px; /* Add padding for spacing inside the box */
+            border: 2px solid #4636c5;
+            background-color: #4636c5;
+            padding: 10px;
             box-sizing: border-box;
             border-radius: 10px;
+            display: flex; /* Added to align content horizontally */
+            align-items: center; /* Added to align content vertically */
         }
+
+
 
         header img {
             height: 50px;
