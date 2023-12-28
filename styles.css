@@ -442,7 +442,17 @@
         justify-content: space-between;
     }
     
-    
+    /* styles.css */
+
+    .nav-link.active {
+        /* Styling for the active navigation link */
+        background-color: white;
+        color: #4636c5;
+        border: 2px solid #4636c5;
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
     
     @media only screen and (max-width: 768px) {
         .menu-icon {
