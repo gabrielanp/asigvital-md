@@ -7,31 +7,45 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="legal.css"> <!-- Add a new CSS file for produse styling -->
+    <link rel="stylesheet" href="styles-split.css"> <!-- Add the new CSS file for the split layout -->
 
     <title>Asigvital</title>
 </head>
 
 <body class="legal-page">
-    <header>
-        <a href="https://gabrielanp.github.io/asigvital-md/" target="_self">
-            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
-        </a>
-        <div>
-            <p><a href="tel:+37369147500"> <img src="call.png" alt="Phone" class="phone" > 079516908 </a> 
-               </p>
-       </div>
-    </header>
-    <nav>
-        <a href="produse.html" target="_self">Produse</a>
-        <a href="persoane.html" target="_self">Persoane</a>
+    <script>
+        // Fetch common.html content and insert it into the body
+        fetch('common.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html + document.body.innerHTML;
+            });
+    </script>
+    <h1>Termeni și condiții</h1>
+    <div class="split">
+        <div class="company-info">
+        <!-- Your company information goes here -->
+        <h2>BAR Asigvital SRL</h2>
+        <p><strong>IDNO:</strong> 1007600065566</p>
+        <p><strong>Adresa:</strong>  bd. Mircea cel Batrin 4/6</p>
+        <p><strong>Telefon:</strong><a href="tel:+37369147500" class="noedit"> 079516908 </a></p>
+        <p><strong>Licenta:</strong> <a href="licenta.pdf" class="noedit">BAR Asigvital SRL</a> </p>
+        <p><strong>Extras din Registrul de stat:</strong> <a href="extras.pdf" class="noedit">BAR Asigvital SRL</a> </p>
+        <!-- Add more company information as needed -->
         
-        <a class="legal" href="legal.html" target="_self">Legal</a>
-        <a href="despre-noi.html" target="_self">Despre noi</a>
-        <a href="blog.html" target="_self">Blog</a>
-     
-        <a href="intrebari-frecvente.html" target="_self">Întrebări frecvente</a>
-    </nav>
-    <!-- Rest of your content -->
+    </div>
+
+    <div class="pdf-content">
+        
+        <div class="pdf-attachments">
+            <p><a href="licenta.pdf" target="_blank"><img src="pdf-icon.png" alt="PDF Icon"> Licenta</a></p>
+            <p><a href="extras.pdf" target="_blank"><img src="pdf-icon.png" alt="PDF Icon"> Extras din Registrul de stat</a></p>
+            
+            <!-- Add more PDF attachments as needed -->
+        </div>
+    </div></div>
+    
+
 </body>
 
 </html>

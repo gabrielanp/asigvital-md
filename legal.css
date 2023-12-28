@@ -7,3 +7,48 @@ body.legal-page nav a.legal {
     padding: 8px 16px; /* Adjust padding for better spacing */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
 }
+h1 {
+    align-items: center;
+    text-align: center;
+}
+.split {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pdf-content {
+    flex: 2;
+    padding: 20px;
+}
+.noedit {
+    text-decoration: none; /* Remove underline */
+    font-style: italic; /* Apply italic font style */
+}
+/* Add styles for the company info and PDF attachments */
+.company-info {
+    width: 30%; /* Adjust the width as needed */
+    float: left;
+    padding-right: 20px; /* Add some spacing between sections */
+    background-color: #f2f2f2;
+    margin-left: 2cm;
+}
+
+.pdf-attachments {
+    width: 70%; /* Adjust the width as needed */
+    float: left;
+}
+
+/* Style for PDF icon */
+.pdf-attachments img {
+    width: 20px; /* Adjust the size of the PDF icon */
+    height: auto;
+    margin-right: 5px; /* Add some spacing between icon and text */
+}
+
+/* Clear float to prevent layout issues */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

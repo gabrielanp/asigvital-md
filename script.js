@@ -122,7 +122,6 @@ function calculateInsurance() {
 }
 
 
-// Show/hide hamburger icon based on screen width
 function checkScreenWidth() {
     var menuIcon = document.querySelector('.menu-icon');
     var nav = document.querySelector('nav ul');
@@ -141,9 +140,10 @@ checkScreenWidth();
 
 // Check and update on window resize
 window.addEventListener('resize', checkScreenWidth);
+
 // Add this to your existing JavaScript code
 function toggleMenu() {
-    var nav = document.querySelector('#main-nav');
+    var nav = document.getElementById('main-nav');
     nav.classList.toggle('open');
 }
 
@@ -154,3 +154,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling when clicking on the "Afla mai mult" link
+    document.getElementById('aflaMaiMultLink').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.getElementById('insurances').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

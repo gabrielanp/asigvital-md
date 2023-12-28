@@ -17,12 +17,21 @@
         <a href="https://gabrielanp.github.io/asigvital-md/" target="_self">
             <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
         </a>
-        <div>
-             <p><a href="tel:+37369147500"> <img src="call.png" alt="Phone" class="phone" > 079516908 </a> 
-                </p>
+        
+        <div class="phone-container">
+            <p><a href="tel:+37369147500"><img src="call.png" alt="Phone" class="phone"> 079516908 </a></p>
+            <p><a href="tel:+123456789"><img src="call.png" alt="Phone" class="phone"> 069147500 </a></p>
+            <!--<p><a href="tel:+123456789"><img src="call.png" alt="Phone" class="phone"> 069518025 </a></p> !-->
         </div>
+        
     </header>
-   
+    
+   <!-- Add the hamburger icon for small screens -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
     <nav  id="main-nav">
         <a href="produse.html" target="_self">Produse</a>
         <a href="persoane.html" target="_self">Persoane</a>
@@ -40,12 +49,11 @@
             <div class="contact-buttons-container">
                 <p class="contact-email">
                     <img src="click.png" alt="Click" class="phone">
-                    <a href="mailto:vioricapetrov8@gmail.com">Comanda acum</a>
+                    <a href="mailto:info@asigvital.md">Comanda acum</a>
                 </p>
                 <p class="afla">
-                    <img src="click.png" alt="Click" class="phone">
-                    <a href="mailto:vioricapetrov8@gmail.com">Afla mai mult</a>
-                </p>
+                    <img src="click.png" alt="Click" class="phone" id="aflaMaiMultLink">
+                    <a href="#insurances">Afla mai mult</a>
             </div>
             
             
@@ -59,7 +67,7 @@
     </div>
 
     <!-- Insurances Section -->
-    <div class="insurances">
+    <div class="insurances" id="insurances">
         <!-- Insurance Blocks -->
         <div class="insurance-block">
             <img src="auto.png" alt="Auto Icon">
@@ -90,17 +98,17 @@
     <div class="client-logos">
         <div class="logo-carousel">
             <div class="logo-container">
-                <img src="donaris.jpg" alt="Partner Logo 1">
+                <a href="https://donaris.md/" target="_self"><img src="donaris.jpg" alt="Partner Logo 1"></a>
             </div>
             <div class="logo-container">
-                <img src="grawe.jpeg" alt="Partner Logo 2">
+                <a href="https://www.grawe.md/" target="_self"><img src="grawe.jpeg" alt="Partner Logo 2"></a>
             </div>
             <div class="logo-container">
-                <img src="moldasig.jpg" alt="Partner Logo 3">
+                <a href="https://www.moldasig.md/" target="_self"><img src="moldasig.jpg" alt="Partner Logo 3"></a>
             </div>
             
             <div class="logo-container">
-                <img src="general.png" alt="Partner Logo 1">
+                <a href="https://general.md/en/" target="_self"><img src="general.png" alt="Partner Logo 1"></a>
             </div>
             
             
