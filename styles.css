@@ -397,30 +397,33 @@
     
     
     /* Add this CSS code to your styles.css file */
+    
+    
+    .box img {
+        width: 50px; /* Adjust the width of the icons as needed */
+        height: 50px; /* Adjust the height of the icons as needed */
+        margin-bottom: 10px;
+    }
+    
+    
     .purple-block {
-        background-color: #5834c8;
-       
-        justify-content: space-between;
-        padding: 20px;
-        margin-top: 20px; /* Adjust as needed */
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-        gap: 20px; /* Adjust the gap between grid items */
+        display: flex;
+        justify-content: space-around;
+        background-color: #4636c5;
+        padding: 100px;
+        color: white;
     }
     
     .box {
-        flex: 0 0 30%; /* Set each box to take up 30% of the container */
-        box-sizing: border-box;
-        height: 100px; /* Set the height of the boxes as needed */
-        background-color: inherit; /* Set the background color of the boxes to inherit from the parent block */
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white; /* Set text color to white */
-        font-size: 1.5em; /* Set font size as needed */
-        
+        text-align: center;
+        font-size: 2em;
+        flex: 1; /* Adjust the flex property to control the size of each box */
+    }
+    
+    .box img {
+        width: 100px; /* Adjust the width of the icons as needed */
+        height: 100px; /* Adjust the height of the icons as needed */
+        margin-bottom: 10px;
     }
     
     .menu-icon {
