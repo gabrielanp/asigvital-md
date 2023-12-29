@@ -7,3 +7,7 @@ body.produse-page nav a.produse {
     padding: 8px 16px; /* Adjust padding for better spacing */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
 }
+h1{
+    align-items: center;
+    text-align: center;
+}
