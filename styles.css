@@ -120,7 +120,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 2em;
-        height: 500px;
+        height: 550px;
         /* Adjust padding as needed */
     }
 
@@ -209,30 +209,33 @@
 
     .insurances {
         text-align: center;
-        padding: 7em;
+        height: 450px;
         background-color: #5834c8;
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-        gap: 20px; /* Adjust the gap between grid items */
+        gap: 4px; /* Adjust the gap between grid items */
         /* Display insurance blocks next to each other */
         justify-content: space-between;
     }
 
     .insurance-block {
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         flex: 1;
-        margin: 0 1em;
+        margin-left: 30px;
         background-color: white;
-        padding: 1em;
+        margin-top: 25px;
+        margin-right: 25px;
         border-radius: 8px;
     }
     
     .insurance-block img {
         width: 50px;
         margin-bottom: 0.5em; /* Adjust as needed */
+        margin-top: 1em;
     }
     
     .insurance-block h2 {

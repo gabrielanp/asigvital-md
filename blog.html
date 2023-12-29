@@ -7,20 +7,32 @@
     <script src="common.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="blog.css"> <!-- Add a new CSS file for produse styling -->
+    <link rel="stylesheet" href="produse.css"> <!-- Add a new CSS file for produse styling -->
 
     <title>Asigvital</title>
 </head>
 
-<body class="blog-page">
+<body class="produse-page">
     <div class="menu-icon" onclick="toggleMenu()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
     </div>
-    <nav>
+    <header>
+        <a href="https://gabrielanp.github.io/asigvital-md/" target="_self">
+            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
+        </a>
+        
+        <div class="phone-container">
+            <p><a href="tel:+37379516908"><img src="call.png" alt="Phone" class="phone"> 079516908 </a></p>
+            <p><a href="tel:+37369147500"><img src="call.png" alt="Phone" class="phone"> 069147500 </a></p>
+            <!--<p><a href="tel:+123456789"><img src="call.png" alt="Phone" class="phone"> 069518025 </a></p> !-->
+        </div>
+        
+    </header>
+    
+    <nav id="main-nav">
        
-      
         <a href="produse.html" class="nav-link">Produse</a>
         <a href="persoane.html" class="nav-link">Persoane</a>
         
@@ -31,7 +43,7 @@
         <a href="intrebari-frecvente.html" class="nav-link">Întrebări frecvente</a>
         <!-- Add more links as needed -->
     </nav>
-
+   
     <script>
         // Fetch common.html content and insert it into the body
         fetch('common.html')
