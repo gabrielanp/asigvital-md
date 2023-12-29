@@ -466,13 +466,13 @@
             background-repeat: no-repeat;
             color: #333;
             background-attachment: fixed;
-            background-color: #2c8a53;
+            background-color: #ffffff;
         }
     
         header {
             display: flex;
             align-items: right;
-            justify-content: space-between;
+            
             background-color: white;
             margin: 0%;
             color: #ffffff;
@@ -482,22 +482,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2em;
+            padding: 1em;
         }
     
         /* Adjusted styles for the phone box in the header */
         header p {
             text-align: center;
-            margin-left: 1cm;
-            margin-right: 0.5cm;
+            margin-left: 0.7cm;
+            margin-right: 0.4cm;
             padding: 0%;
             font-size: 1em;
             font-weight: bold;
-            border: 2px solid #4636c5;
+            border: 1px solid #4636c5;
             background-color: #4636c5;
-            padding: 10px;
+            padding: 5px;
             box-sizing: border-box;
-            border-radius: 20px;
+            border-radius: 10px;
             display: flex; /* Added to align content horizontally */
             align-items: center; /* Added to align content vertically */
         }
@@ -509,10 +509,10 @@
     
         .contact-email {
             text-align: center;
-            margin-left: 2cm;
+            margin-left: 1cm;
             margin-right: 0.5cm;
-            padding: 8px;
-            font-size: 1em;
+            padding: 10%;
+            font-size: 0.5em;
             font-weight: bold;
             border: 2px solid #4636c5;
             background-color: #4636c5;
@@ -521,14 +521,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 50px;
+            width: 100px;
         }
         .afla {
             text-align: center;
-            margin-left: 2cm;
+            margin-left: 1cm;
             margin-right: 0.5cm;
-            padding: 8px;
-            font-size: 1em;
+            padding: 10%;
+            font-size: 0.5em;
             font-weight: bold;
             border: 2px solid #4636c5;
             background-color: #ffffff;
@@ -537,7 +537,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 150px;
+            width: 100px;
         }
     
     
@@ -556,8 +556,8 @@
     
     
         header img {
-            height: 50px;
-            margin-left: 1.5cm;
+            height: 3cap;
+            margin-left: 0.5cm;
             cursor: pointer;
             margin-top: 1em;
         }
@@ -583,10 +583,10 @@
         }
     
         .slogan {
-            font-size: 2.5em;
+            font-size: 1.5em;
             font-style: italic;
             color: #4636c5;
-            margin-left: 2cm;
+            margin-left: 1cm;
             padding: 0%;
         }
     
