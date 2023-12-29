@@ -9,13 +9,13 @@
         background-repeat: no-repeat;
         color: #333;
         background-attachment: fixed;
-        background-color: #2c8a53;
+        background-color: #ffffff;
     }
 
     header {
         display: flex;
         align-items: right;
-        justify-content: space-between;
+        
         background-color: white;
         margin: 0%;
         color: #ffffff;
@@ -25,22 +25,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2em;
+        padding: 1em;
     }
 
     /* Adjusted styles for the phone box in the header */
     header p {
         text-align: center;
-        margin-left: 1cm;
-        margin-right: 0.5cm;
+        margin-left: 0.7cm;
+        margin-right: 0.4cm;
         padding: 0%;
         font-size: 1em;
         font-weight: bold;
-        border: 2px solid #4636c5;
+        border: 1px solid #4636c5;
         background-color: #4636c5;
-        padding: 10px;
+        padding: 5px;
         box-sizing: border-box;
-        border-radius: 20px;
+        border-radius: 10px;
         display: flex; /* Added to align content horizontally */
         align-items: center; /* Added to align content vertically */
     }
@@ -52,35 +52,42 @@
 
     .contact-email {
         text-align: center;
-        margin-left: 2cm;
+        margin-left: 1cm;
         margin-right: 0.5cm;
-        padding: 8px;
-        font-size: 1em;
+        padding: 10%;
+        font-size: 0.7em;
         font-weight: bold;
         border: 2px solid #4636c5;
         background-color: #4636c5;
         box-sizing: border-box;
-        border-radius: 20px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50px;
+        width: 70px;
+        height: 20px;
+    }
+    .contact-email img {
+        height: 10px;
+        width: 10px;
+        margin-left: 1cm;
     }
     .afla {
         text-align: center;
-        margin-left: 2cm;
+        margin-left: 1cm;
         margin-right: 0.5cm;
-        padding: 8px;
-        font-size: 1em;
+        padding: 10%;
+        font-size: 0.7em;
         font-weight: bold;
         border: 2px solid #4636c5;
         background-color: #ffffff;
         box-sizing: border-box;
-        border-radius: 20px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 150px;
+        width: 70px;
+        height: 20px;
     }
 
 
@@ -99,8 +106,8 @@
 
 
     header img {
-        height: 50px;
-        margin-left: 1.5cm;
+        height: 3cap;
+        margin-left: 0.5cm;
         cursor: pointer;
         margin-top: 1em;
     }
@@ -120,16 +127,16 @@
         gap: 0px; /* Adjust the gap between grid items */
         justify-content: space-between;
         align-items: center;
-        padding: 2em;
-        height: 500px;
+        padding: 0.5em;
+        height: 250px;
         /* Adjust padding as needed */
     }
 
     .slogan {
-        font-size: 2.5em;
+        font-size: 1em;
         font-style: italic;
         color: #4636c5;
-        margin-left: 2cm;
+        margin-left: 1cm;
         padding: 0%;
     }
 
@@ -185,19 +192,20 @@
     }
 
     nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav.open {
         display: flex;
-        justify-content: center;
-        background-color: white;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
     }
 
     nav a {
-        color: #4636c5;
-        text-decoration: none;
-        padding: 1em;
-        margin: 0 1em;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        text-align: center;
     }
 
     /* Style for the active link */
@@ -429,7 +437,7 @@
     }
 
     .menu-icon {
-    display: none; /* Initially hide the hamburger icon */
+    display: block; /* Initially hide the hamburger icon */
     cursor: pointer;
     }
 
