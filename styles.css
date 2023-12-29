@@ -813,11 +813,11 @@
     
         .logo-container {
         flex: 0 0 auto;
-        margin: 0 10px; /* Add margin to separate logos */
+        margin: 0 8px; /* Add margin to separate logos */
         }
     
         .logo-container img {
-        max-height: 40px; /* Set maximum height for images */
+        max-height: 30px; /* Set maximum height for images */
         width: auto; /* Allow the width to adjust proportionally */
         margin: 0px;
         }
