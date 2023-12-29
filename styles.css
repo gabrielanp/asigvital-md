@@ -186,7 +186,7 @@
     nav {
         display: flex;
         justify-content: center;
-        background-color: #F8EBFF;
+        background-color: #ffffff;
         position: sticky;
         top: 0;
         z-index: 1000;
@@ -528,7 +528,15 @@ button:hover {
             display: flex; /* Added to align content horizontally */
             align-items: center; /* Added to align content vertically */
         }
-    
+        button {
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: #4636c5; /* Green background color */
+            color: #fff; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Add cursor pointer on hover */
+        }
        
         .contact-email {
             text-align: left;
@@ -705,7 +713,7 @@ button:hover {
             text-align: center;
             padding: 1em;
             background-color: #5834c8;
-            display: grid;
+            display: flex;
             height: 290px;
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
             gap: 5px; /* Adjust the gap between grid items */
