@@ -126,7 +126,7 @@ function checkScreenWidth() {
     var menuIcon = document.querySelector('.menu-icon');
     var nav = document.querySelector('nav ul');
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 600) {
         menuIcon.style.display = 'block';
         nav.style.display = 'none';
     } else {
