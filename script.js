@@ -141,17 +141,23 @@ checkScreenWidth();
 // Check and update on window resize
 window.addEventListener('resize', checkScreenWidth);
 
-// Add this to your existing JavaScript code
 function toggleMenu() {
     var nav = document.getElementById('main-nav');
     nav.classList.toggle('open');
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
     var menuIcon = document.querySelector('.menu-icon');
     menuIcon.addEventListener('click', toggleMenu);
+
+    // Close the menu when clicking outside of it
+    document.addEventListener('click', function (e) {
+        if (!nav.contains(e.target) && !menuIcon.contains(e.target)) {
+            nav.classList.remove('open');
+        }
+    });
 });
+
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 document.addEventListener('DOMContentLoaded', function() {

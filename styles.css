@@ -642,19 +642,20 @@
         }
     
         nav {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        nav.open {
             display: flex;
-            justify-content: center;
-            background-color: white;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
     
         nav a {
-            color: #4636c5;
-            text-decoration: none;
-            padding: 1em;
-            margin: 0 1em;
+            border-bottom: 1px solid #fff;
+            width: 100%;
+            text-align: center;
         }
     
         /* Style for the active link */
@@ -886,7 +887,7 @@
         }
     
         .menu-icon {
-        display: none; /* Initially hide the hamburger icon */
+        display: block; /* Initially hide the hamburger icon */
         cursor: pointer;
         }
     
