@@ -472,6 +472,7 @@ button {
     border: none; /* Remove border */
     border-radius: 5px; /* Add border radius */
     cursor: pointer; /* Add cursor pointer on hover */
+    align-items: end;
 }
 
 /* Style for the button on hover */
