@@ -192,6 +192,11 @@
         z-index: 1000;
     }
     
+    nav a:hover {
+        box-shadow: 10px 10px 10px rgb(125, 128, 163);
+        border-radius: 8px;
+
+    }
     nav a {
         color: #4636c5;
         text-decoration: none;
@@ -210,7 +215,7 @@
     .insurances {
         text-align: center;
         height: 450px;
-        background-color: #5834c8;
+        background-color: #ffffff;
         display: grid;
         grid-template-columns: repeat(3, 1fr); /* Three equal columns */
         gap: 4px; /* Adjust the gap between grid items */
@@ -231,6 +236,9 @@
         margin-right: 25px;
         border-radius: 8px;
         text-decoration: none;
+        
+        box-shadow: 10px 10px 10px rgb(125, 128, 163);
+          
     }
     
     .insurance-block img {
@@ -420,21 +428,38 @@
 .purple-block {
     display: flex;
     justify-content: space-around;
-    background-color: #4636c5;
+    background-color: #ffffff;
     padding: 100px;
-    color: white;
+    color: #4636c5;
 }
 
 .box {
     text-align: center;
     font-size: 2em;
     flex: 1; /* Adjust the flex property to control the size of each box */
+    height: 300px;
+    width: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+        margin-left: 30px;
+        background-color: #ffffff;
+        margin-top: 25px;
+        margin-right: 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        
+        box-shadow: 10px 10px 10px rgb(125, 128, 163);
 }
 
 .box img {
-    width: 100px; /* Adjust the width of the icons as needed */
-    height: 100px; /* Adjust the height of the icons as needed */
+    width: 70px; /* Adjust the width of the icons as needed */
+    height: 70px; /* Adjust the height of the icons as needed */
     margin-bottom: 10px;
+    margin-top: 10px;
+    color: #4636c5;
 }
 
 .menu-icon {
