@@ -658,13 +658,7 @@ button:hover {
             
             margin-top: 0em;
         }
-        .phone:hover{
-       
-                box-shadow: 10px 10px 10px rgb(125, 128, 163);
-                border-radius: 20px;
-                background-color: #4636c5;
-            
-        }
+        
         .block {
             display: grid;
             grid-template-columns: 1fr 1fr; /* Two columns */
@@ -764,7 +758,7 @@ button:hover {
         .insurances {
             text-align: center;
             padding: 1em;
-            background-color: #5834c8;
+            background-color: #ffffff;
             display: flex;
             height: 290px;
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
@@ -895,11 +889,13 @@ button:hover {
         grid-template-columns: repeat(8, 1fr); /* Eight equal columns */
         gap: 0px; /* Adjust the gap between logos */
         transition: transform 0.5s ease-in-out;
+        margin-left: 10px;
         }
     
         .logo-container {
         flex: 0 0 auto;
         margin: 0 8px; /* Add margin to separate logos */
+        
         }
     
         .logo-container img {
@@ -922,23 +918,25 @@ button:hover {
         .purple-block {
         display: flex;
         justify-content: space-around;
-        background-color: #4636c5;
+        background-color: #ffffff;
         padding: 10px;
         color: white;
-        height: 150px;
+        height: 200px;
         }
     
         .box {
         text-align: center;
         font-size: 1em;
+        height: 200px;
+        color: #4636c5;
         flex: 1; /* Adjust the flex property to control the size of each box */
         }
     
         .box img {
-        width: 50px; /* Adjust the width of the icons as needed */
-        height: 50px; /* Adjust the height of the icons as needed */
+        width: 30px; /* Adjust the width of the icons as needed */
+        height: 30px; /* Adjust the height of the icons as needed */
         margin-bottom: 5px;
-        margin-top: 5px;
+        margin-top: 10px;
         }
     
         .menu-icon {
