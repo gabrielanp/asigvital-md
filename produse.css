@@ -1,13 +1,150 @@
-/* produse.css */
-
 body.produse-page nav a.produse {
     /* Styling for the "Produse" link in the navigation bar on produse.html */
-    border: 2px solid #4636c5;
-    border-radius: 8px; /* Adding border-radius for rounded corners */
-    padding: 8px 16px; /* Adjust padding for better spacing */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
+    box-shadow: 10px 10px 10px rgb(125, 128, 163);
+    border-radius: 8px;
 }
-h1{
+h1 {
     align-items: center;
     text-align: center;
+}
+
+.produse-asig {
+    margin-left: 2cm;
+    margin-right: 3cm;
+    padding: 10px;
+    margin: 10px;
+}
+
+.wrap {
+    white-space: normal;
+}
+
+.unwrap {
+    white-space: nowrap;
+}
+
+/* Add a style for the heading to make it inline-block */
+.toggle-heading {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Adjust the arrow style */
+.toggle-arrow.arrow-up {
+    transform: rotate(180deg);
+}
+
+/* ... your existing CSS code ... */
+
+.toggle-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: #555 transparent transparent transparent;
+    margin-left: 5px; /* Add margin for spacing */
+    transition: transform 0.3s ease; /* Add smooth transition for rotation */
+}
+
+.toggle-arrow::before,
+.toggle-arrow::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 10px; /* Adjust the height of the lines */
+    background-color: #555;
+    position: absolute;
+}
+
+.toggle-arrow::before {
+    top: 0;
+}
+
+.toggle-arrow::after {
+    top: 10px; /* Adjust the distance between the lines */
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* ... the rest of your CSS code ... */
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+}
+
+/* New styles for the button-container */
+.button-container {
+    flex: 1; /* Takes up 1/3 of the available space */
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    text-align: right; /* Align button to the right */
+}
+
+.button-container button {
+    padding: 10px;
+    background-color: #3498db; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* New styles for the side-container */
+.side-container {
+    flex: 0 0 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.side-container button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4636c5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.side-container p {
+    margin-bottom: 10px;
+}
+
+.side-container a {
+    color: #4636c5;
+    text-decoration: underline;
+}
+
+/* Add media query for responsive design if needed */
+@media (max-width: 768px) {
+    .produse-asig,
+    .button-container,
+    .side-container {
+        flex: 1 100%; /* Stack elements on smaller screens */
+    }
 }

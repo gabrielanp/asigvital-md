@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="common.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="produse.css"> <!-- Add a new CSS file for produse styling -->
+
+    <title>Asigvital</title>
+</head>
+
+<body class="produse-page">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <header>
+        <a href="https://gabrielanp.github.io/asigvital-md/" target="_self">
+            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
+        </a>
+        
+        <div class="phone-container">
+            <p><a href="tel:+37379516908"><img src="call.png" alt="Phone" class="phone"> 079516908 </a></p>
+            <p><a href="tel:+37369147500"><img src="call.png" alt="Phone" class="phone"> 069147500 </a></p>
+            <!--<p><a href="tel:+123456789"><img src="call.png" alt="Phone" class="phone"> 069518025 </a></p> !-->
+        </div>
+        
+    </header>
+    
+    <nav id="main-nav">
+       
+       
+        <a href="persoane.html" class="nav-link">Persoane</a>
+        
+        <a href="legal.html" class="nav-link">Legal</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+     
+        <a href="intrebari-frecvente.html" class="nav-link">Întrebări frecvente</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <script>
+        // Fetch common.html content and insert it into the body
+        fetch('common.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html + document.body.innerHTML;
+            });
+    </script>
+    <h1>Asigurări Persoane</h1>
+    <div class="section-container">
+    <div class="produse-asig">
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content4')">Medicală Peste Hotare <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content4">
+                <section>
+                    <h3>I: Asigurare Medicală Peste Hotare</h3>
+                    <p><strong>Asigurarea Medicală Peste Hotare</strong> oferă protecție pentru situații medicale neprevăzute care pot apărea în timpul călătoriilor internaționale.</p>
+                </section>
+        
+                <section>
+                    <h3>II. Acoperire și Beneficii:</h3>
+                    <ul>
+                        <li>Consultații medicale în străinătate;</li>
+                        <li>Intervenții chirurgicale de urgență;</li>
+                        <li>Transport medical de urgență;</li>
+                        <li>Medicamente și tratamente prescrise;</li>
+                        <li>Asistență medicală telefonică 24/7.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>III. Condiții de Utilizare:</h3>
+                    <ul>
+                        <li>Asiguratul trebuie să informeze asigurătorul despre călătoria planificată în străinătate;</li>
+                        <li>Documente necesare: carte de identitate, poliță de asigurare, itinerarul călătoriei;</li>
+                        <li>Asigurarea acoperă doar evenimentele medicale specifice incluse în poliță.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>IV. Contact și Asistență:</h3>
+                    <p>Pentru orice situație medicală de urgență în străinătate, asiguratul poate apela la linia de asistență medicală specificată în polița de asigurare.</p>
+                </section>
+            </div>
+        </div>
+        
+    
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content5')">Asigurare de Accidente <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content5">
+                <section>
+                    <h3>I: Asigurarea de Accidente</h3>
+                    <p><strong>Asigurarea de Accidente</strong> oferă protecție financiară în caz de accidente care pot duce la vătămări sau deces.</p>
+                </section>
+        
+                <section>
+                    <h3>II. Acoperire și Beneficii:</h3>
+                    <ul>
+                        <li>Despăgubiri în caz de vătămare corporală sau deces ca urmare a unui accident;</li>
+                        <li>Asistență medicală și suport financiar în recuperare;</li>
+                        <li>Despăgubiri pentru cheltuieli medicale și de înmormântare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>III. Condiții de Utilizare:</h3>
+                    <ul>
+                        <li>Poliza acoperă accidentele înregistrate în timpul perioadei de valabilitate;</li>
+                        <li>Asiguratul trebuie să informeze asigurătorul despre accident în cel mai scurt timp posibil;</li>
+                        <li>Documente necesare: raportul de poliție, certificate medicale.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>IV. Contact și Asistență:</h3>
+                    <p>Pentru raportarea unui accident și solicitarea de asistență, asiguratul poate apela la linia de urgență specificată în polița de asigurare.</p>
+                </section>
+            </div>
+        </div>
+        
+    
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content6')">Asigurare Medicală Facultativă <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content6">
+                <section>
+                    <h3>I: Acoperire Medicală</h3>
+                    <p><strong>Asigurarea Medicală Facultativă</strong> oferă o gamă extinsă de beneficii medicale pentru asigurat. Aceasta include, dar nu se limitează la:</p>
+                    <ul>
+                        <li>Consultații medicale;</li>
+                        <li>Analize de laborator și imagistice;</li>
+                        <li>Intervenții chirurgicale;</li>
+                        <li>Tratamente medicale specializate;</li>
+                        <li>Medicamente și terapii;</li>
+                        <li>Asistență medicală de urgență;</li>
+                        <li>Alte servicii medicale conforme poliței.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>II: Condiții Generale</h3>
+                    <p>Pentru a beneficia de asigurare, asiguratul trebuie să îndeplinească următoarele condiții:</p>
+                    <ul>
+                        <li>Vârsta asiguratului situată în intervalul specificat în poliță;</li>
+                        <li>Prezentarea actului de identitate în momentul solicitării serviciilor medicale;</li>
+                        <li>Alte condiții specifice stabilite de polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>III: Costuri și Prime de Asigurare</h3>
+                    <p>Prima de asigurare pentru Asigurarea Medicală Facultativă poate varia în funcție de:</p>
+                    <ul>
+                        <li>Vârsta asiguratului;</li>
+                        <li>Suma asigurată;</li>
+                        <li>Tipul de acoperire medicală selectat;</li>
+                        <li>Alte factori specificați în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>IV: Procedura în caz de Urgență Medicală</h3>
+                    <p>În caz de urgență medicală, asiguratul trebuie să:</p>
+                    <ul>
+                        <li>Contacteze imediat serviciile de urgență;</li>
+                        <li>Notifice asigurătorul în cel mai scurt timp posibil;</li>
+                        <li>Păstreze documente relevante pentru a solicita despăgubiri;</li>
+                        <li>Urmărească procedurile stabilite în polița de asigurare pentru acoperirea cheltuielilor medicale de urgență.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contact-buttons-container">
+        <p class="contact-email">
+            
+             <a href="mailto:info@asigvital.md">Comandă acum </a>
+        </p>
+        
+    </div>
+    </div>
+    
+    
+    <footer>
+        <div>
+            <p>&copy; <span id="currentYear"></span> BAR Asigvital SRL. All rights reserved.</p>
+            
+         
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

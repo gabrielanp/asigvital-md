@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="common.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="produse.css"> <!-- Add a new CSS file for produse styling -->
+
+    <title>Asigvital</title>
+</head>
+
+<body class="produse-page">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <header>
+        <a href="https://gabrielanp.github.io/asigvital-md/" target="_self">
+            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
+        </a>
+        
+        <div class="phone-container">
+            <p><a href="tel:+37379516908"><img src="call.png" alt="Phone" class="phone"> 079516908 </a></p>
+            <p><a href="tel:+37369147500"><img src="call.png" alt="Phone" class="phone"> 069147500 </a></p>
+            <!--<p><a href="tel:+123456789"><img src="call.png" alt="Phone" class="phone"> 069518025 </a></p> !-->
+        </div>
+        
+    </header>
+    
+    <nav id="main-nav">
+       
+       
+        <a href="persoane.html" class="nav-link">Persoane</a>
+        
+        <a href="legal.html" class="nav-link">Legal</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+     
+        <a href="intrebari-frecvente.html" class="nav-link">Întrebări frecvente</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <script>
+        // Fetch common.html content and insert it into the body
+        fetch('common.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html + document.body.innerHTML;
+            });
+    </script>
+    <h1>Asigurări Bunuri</h1>
+    <div class="section-container">
+    
+    <div class="produse-asig">
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content7')">Asigurare Complexă a Locuinței <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content7">
+                <section>
+                    <h3>I: Acoperire Asigurare Locuință</h3>
+                    <p><strong>Asigurarea Complexă a Locuinței</strong> oferă protecție extinsă pentru locuința asiguratului. Aceasta poate include următoarele tipuri de acoperiri:</p>
+                    <ul>
+                        <li>Asigurarea împotriva incendiilor;</li>
+                        <li>Acoperire împotriva furtului și vandalismului;</li>
+                        <li>Protecție împotriva daunelor cauzate de condiții meteorologice extreme;</li>
+                        <li>Asigurare împotriva daunelor cauzate de apă (inundații, scurgeri, etc.);</li>
+                        <li>Alte tipuri de acoperire specifice.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>II: Condiții Generale</h3>
+                    <p>Pentru a beneficia de asigurare, asiguratul trebuie să îndeplinească următoarele condiții:</p>
+                    <ul>
+                        <li>Locuința trebuie să fie înmatriculată în Republica Moldova;</li>
+                        <li>Prezentarea documentelor relevante pentru evaluarea valorii locuinței;</li>
+                        <li>Respectarea altor condiții specifice stabilite în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>III: Evaluarea și Costuri</h3>
+                    <p>Valoarea primei de asigurare pentru Asigurarea Complexă a Locuinței poate depinde de:</p>
+                    <ul>
+                        <li>Valoarea totală a locuinței;</li>
+                        <li>Tipul de acoperire selectat;</li>
+                        <li>Alți factori specificați în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>IV: Procedura în caz de Daună</h3>
+                    <p>În caz de daună, asiguratul trebuie să urmeze procedurile stabilite de asigurător, cum ar fi:</p>
+                    <ul>
+                        <li>Anunțarea imediată a asigurătorului despre eveniment;</li>
+                        <li>Păstrarea documentelor relevante și obținerea probelor;</li>
+                        <li>Prezentarea daunelor pentru evaluare;</li>
+                        <li>Despăgubirea conform condițiilor poliței de asigurare.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+      
+    
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content8')">Asigurare Bunuri Mobile și Imobile <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content8">
+                <section>
+                    <h3>I: Acoperire Asigurare Bunuri</h3>
+                    <p><strong>Asigurarea Bunuri Mobile și Imobile</strong> oferă protecție pentru bunurile mobile și imobile ale asiguratului. Aceasta poate include următoarele tipuri de acoperiri:</p>
+                    <ul>
+                        <li>Asigurarea bunurilor mobile, cum ar fi echipamente electronice, bijuterii, etc.;</li>
+                        <li>Acoperirea bunurilor imobile, cum ar fi clădirile și proprietățile asiguratului;</li>
+                        <li>Protecție împotriva furtului, deteriorării sau distrugerii bunurilor;</li>
+                        <li>Alte tipuri de acoperire specifice stabilite în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>II: Condiții Generale</h3>
+                    <p>Pentru a beneficia de asigurare, asiguratul trebuie să îndeplinească următoarele condiții:</p>
+                    <ul>
+                        <li>Prezentarea unei inventarieri complete a bunurilor mobile și imobile;</li>
+                        <li>Documentarea valorii corespunzătoare a fiecărui bun asigurat;</li>
+                        <li>Respectarea altor condiții specifice stabilite în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>III: Evaluarea și Costuri</h3>
+                    <p>Valoarea primei de asigurare pentru Asigurarea Bunuri Mobile și Imobile poate depinde de:</p>
+                    <ul>
+                        <li>Valoarea totală a bunurilor mobile și imobile;</li>
+                        <li>Tipul de acoperire selectat pentru fiecare categorie de bun;</li>
+                        <li>Alți factori specificați în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>IV: Procedura în caz de Daună</h3>
+                    <p>În caz de daună, asiguratul trebuie să urmeze procedurile stabilite de asigurător, cum ar fi:</p>
+                    <ul>
+                        <li>Anunțarea imediată a asigurătorului despre eveniment;</li>
+                        <li>Păstrarea documentelor relevante și obținerea probelor;</li>
+                        <li>Prezentarea daunelor pentru evaluare;</li>
+                        <li>Despăgubirea conform condițiilor poliței de asigurare.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+    
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content9')">Asigurare Lucrări de Construcție Montaj <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content9">
+                <section>
+                    <h3>I: Acoperire Asigurare Lucrări de Construcție Montaj</h3>
+                    <p><strong>Asigurarea Lucrări de Construcție Montaj</strong> oferă protecție pentru riscurile asociate lucrărilor de construcție și montaj. Aceasta poate include următoarele elemente:</p>
+                    <ul>
+                        <li>Asigurarea împotriva daunelor sau distrugerii lucrărilor în construcție;</li>
+                        <li>Protecție împotriva riscurilor de furt, incendiu, inundații și alte evenimente neașteptate;</li>
+                        <li>Acoperirea echipamentelor, materialelor și muncitorilor implicați în construcție;</li>
+                        <li>Alte aspecte specifice stabilite în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>II: Condiții Generale</h3>
+                    <p>Asiguratul trebuie să îndeplinească anumite condiții pentru a beneficia de acoperirea asigurării Lucrări de Construcție Montaj:</p>
+                    <ul>
+                        <li>Prezentarea documentației complete a proiectului de construcție;</li>
+                        <li>Respectarea standardelor de siguranță și a reglementărilor locale;</li>
+                        <li>Asigurarea monitorizării constante a șantierului și a echipamentelor;</li>
+                        <li>Alte condiții specificate în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>III: Evaluarea și Costuri</h3>
+                    <p>Valoarea primei de asigurare pentru Lucrările de Construcție Montaj poate depinde de:</p>
+                    <ul>
+                        <li>Valoarea totală a proiectului de construcție;</li>
+                        <li>Tipul de construcție și nivelul de riscuri asociate;</li>
+                        <li>Alți factori specificați în polița de asigurare.</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>IV: Procedura în caz de Daună</h3>
+                    <p>În caz de daună, asiguratul trebuie să urmeze procedurile stabilite de asigurător, cum ar fi:</p>
+                    <ul>
+                        <li>Anunțarea imediată a asigurătorului despre eveniment;</li>
+                        <li>Păstrarea documentelor relevante și obținerea probelor;</li>
+                        <li>Prezentarea daunelor pentru evaluare;</li>
+                        <li>Despăgubirea conform condițiilor poliței de asigurare.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contact-buttons-container">
+        <p class="contact-email">
+            
+             <a href="mailto:info@asigvital.md">Comandă acum </a>
+        </p>
+        
+    </div>
+    
+</div>
+    
+    
+    
+    <footer>
+        <div>
+            <p>&copy; <span id="currentYear"></span> BAR Asigvital SRL. All rights reserved.</p>
+            
+         
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

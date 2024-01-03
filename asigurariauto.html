@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="common.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="produse.css"> <!-- Add a new CSS file for produse styling -->
+
+    <title>Asigvital</title>
+</head>
+
+<body class="produse-page">
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <header>
+        <a href="https://gabrielanp.github.io/asigvital-md/" target="_self">
+            <img src="asigvital-removebg-preview.png" alt="Asigvital Logo">
+        </a>
+        
+        <div class="phone-container">
+            <p><a href="tel:+37379516908"><img src="call.png" alt="Phone" class="phone"> 079516908 </a></p>
+            <p><a href="tel:+37369147500"><img src="call.png" alt="Phone" class="phone"> 069147500 </a></p>
+            <!--<p><a href="tel:+123456789"><img src="call.png" alt="Phone" class="phone"> 069518025 </a></p> !-->
+        </div>
+        
+    </header>
+    
+    <nav id="main-nav">
+       
+      
+        <a href="persoane.html" class="nav-link">Persoane</a>
+        
+        <a href="legal.html" class="nav-link">Legal</a>
+        <a href="despre-noi.html" class="nav-link">Despre noi</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+     
+        <a href="intrebari-frecvente.html" class="nav-link">Întrebări frecvente</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <script>
+        // Fetch common.html content and insert it into the body
+        fetch('common.html')
+            .then(response => response.text())
+            .then(html => {
+                document.body.innerHTML = html + document.body.innerHTML;
+            });
+    </script>
+    <h1>Asigurări Auto</h1>
+    <div class="section-container">
+    <div class="produse-asig" id="mySection">
+        <div>
+       <h2 class="toggle-heading" onclick="toggleContent('content1')">Asigurare RCA <span class="toggle-arrow"></span>
+        </h2>
+        <div class="content" id="content1"> <section>
+            <h3>I: Asigurarea obligatorie de răspundere civilă auto internă (RCAI)</h3>
+            <p><strong>Noțiuni Generale:</strong> Asigurarea obligatorie de răspundere civilă auto internă (RCAI) reprezintă un contract încheiat între posesorul de vehicul, numit asigurat (persoană fizică sau juridică) și compania de asigurare, numit asigurator. Asigurătorul se obligă să achite valoarea daunei produse terței persoane în schimbul prime de asigurare achitate de asigurat.</p>
+            <p>Asigurarea obligatorie de răspundere civilă auto (RCAI) este OBLIGATORIE și are menirea de a apăra interesul economic și social al întregii comunități precum și de a proteja victimele unor accidente. Lipsa RCA este pedepsită conform Codului Contravențional al RM.</p>
+            
+            <p><strong>Teritoriul acoperit:</strong> polița de asigurare RCAI este valabilă doar în Republica Moldova.</p>
+            <p><strong>Termen de valabilitate:</strong> RCAI se emite pentru un termen de 12 luni. Excepție fac doar contractele de asigurare încheiate pentru vehiculele înmatriculate în străinătate, ce nu dețin Carte Verde, în acest caz, contractul poate fi încheiat pentru un termen minim de 30 zile, maxim de 12 luni.</p>
+        </section>
+    
+        <section>
+            <h3>II: Acte Normative</h3>
+            <p>Contractul de asigurare RCA este reglementat de următoarele acte normative:</p>
+            <ul>
+                <li>Legea Nr. 92 din 07.04.2022 privind activitatea de asigurare sau de reasigurare;</li>
+                <li>Legea Nr. 106 din 21.04.2022 privind asigurarea obligatorie de răspundere civilă pentru pagube produse de vehicule;</li>
+                <li>Codul Civil al Republicii Moldova art. 1822 - art. 19161.</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>III: Condiții</h3>
+            <ol>
+                <li>Vehiculul trebuie să fie înmatriculat în Republica Moldova;</li>
+                <li>Vehicule înmatriculate în străinătate care se folosesc pe teritoriul Republicii Moldova;</li>
+                <li>Prezentarea documentelor de identificare ale vehiculului – certificat de înmatriculare;</li>
+            </ol>
+        </section>
+    
+        <section>
+            <h3>IV: Limitele de despăgubire</h3>
+            <ul>
+                <li>Pagube materiale per caz echivalentul la 100 000 EURO (în lei la cursul BNM)</li>
+                <li>Vătămări corporale sau deces per caz echivalentul la 500 000 EURO per persoană echivalentul la 100 000 EURO</li>
+                <li>Prejudicii morale ca urmare a dizabilității sau a decesului per caz 10 000 EURO per persoană 5 000 EURO</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>V: Ce se despăgubește pe RCAI</h3>
+            <ul>
+                <li>Vătămări corporale sau deces, inclusiv pentru prejudicii morale;</li>
+                <li>Daune materiale, inclusiv costuri de radiere a vehiculului și cheltuieli de diminuare a daunei;</li>
+                <li>Costuri privind reparația vehiculului, dovedite prin documente emise de către unitățile de reparații sau prin documente emise în condițiile prezentei legi;</li>
+                <li>Cheltuieli de judecată suportate de persoana păgubită în procesul civil sau cheltuieli aferente în cazul soluționării alternative a litigiului, dacă soluția este favorabilă pentru persoana păgubită;</li>
+                <li>Costul aferent unei singure evacuări a vehiculului avariat;</li>
+            </ul>
+        </section>
+    
+        <section>
+            <h3>VI: Ce reprezintă Sistemul Bonus-Malus?</h3>
+            <p><strong>Sistemul Bonus-Malus</strong> reprezintă sistemul prin care asiguratul este încadrat în una dintre clasele de bonus (ceea ce conduce la reducerea primei de asigurare) sau în una dintre clasele de malus (ceea ce conduce la majorarea primei de asigurare) în funcție de istoricul asiguratului în perioada de referință.</p>
+            <p>Șoferii vor fi penalizați atunci când produc un accident prin plata unei prime RCA mai mari la reînnoire, în timp ce șoferii fără niciun incident vor fi răsplătiți cu reduceri.</p>
+            <p>Penalizarea maximă duce la dublarea primei de asigurare stabilite în grila asigurătorului, în timp ce reducerea maximă este de 50% din tarif.</p>
+        </section></div>
+        </div>
+        <div ><h2 class="toggle-heading" onclick="toggleContent('content2')">Asigurare Cartea Verde <span class="toggle-arrow"></span></h2>
+            <div class="content" id="content2">
+            <section>
+                <h3>I: Asigurarea obligatorie de răspundere civilă auto externă (RCAE)</h3>
+                <p><strong>RCAE sau Cartea Verde</strong> – o asigurare obligatorie pentru toți posesorii de autovehicule care pleacă peste hotare. RCAE acoperă daunele provocate persoanelor terțe în afara Republicii Moldova.</p>
+                <p><strong>Zonele de acoperire Carte Verde:</strong></p>
+                <ul>
+                    <li>Zona 1: (UA) Ucraina, (BY) Belarus;</li>
+                    <li>Zona 2: (UA) Ucraina, (BY) Belarus, (RUS) Rusia;</li>
+                    <li>Zona 3: (A) Austria, (B) Belgia, (BG) Bulgaria, (CY) Cipru, (CZ) Cehia, (D) Germania, (DK) Danemarca, (E) Spania, (EST) Estonia, (F) Franța, (FIN) Finlanda, (GB) Marea Britanie, (GR) Grecia, (H) Ungaria, (HR) Croația, (I) Italia, (IRL) Irlanda, (IS) Islanda, (L) Luxemburg, (LT) Lituania, (LV) Letonia, (M) Malta, (N) Norvegia, (NL) Olanda, (P) Portugalia, (PL) Polonia, (RO) România, (S) Suedia, (SK) Slovacia, (SLO) Slovenia, (CH) Elveția, (AL) Albania, (AND) Andorra, (AZ) Azerbaidjan, (BIH) Bosnia și Herțegovina, (BY) Belarus, (IL) Israel, (MA) Maroc, (MK) Macedonia, (MNE) Muntenegru, (RUS) Rusia, (SRB) Serbia, (TN) Tunisia, (TR) Turcia, (UA) Ucraina, Marea Britanie (UK).</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h3>II. Condiții Generale:</h3>
+                <ul>
+                    <li>autovehiculul să fie înmatriculat în Republica Moldova;</li>
+                    <li>actele necesare: certificat de înmatriculare a autovehiculului sau alte acte ce atestă dreptul de posesiune asupra autovehiculului (procură, contract de locațiune, contract de leasing).</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h3>III. Prețul la RCAE depinde de:</h3>
+                <ul>
+                    <li>tipul autovehiculului (autoturisme, autocamioane, motocicluri, autovehicule destinate transportului de persoane, altele);</li>
+                    <li>teritoriul de circulație (țara/țările de destinație);</li>
+                    <li>perioada de valabilitate a asigurării.</li>
+                </ul>
+            </section>
+        
+            <section>
+                <h3>IV: Accident rutier peste hotare, produs din vina Dvs.:</h3>
+                <ul>
+                    <li>nu părăsiți locul accidentului /întreprindeți acțiuni pentru diminuarea pagubelor produse;</li>
+                    <li>înștiințați organele de poliție, cele mai apropiate de locul producerii accidentului, cerând întocmirea de acte cu privire la cauzele și împrejurările producerii accidentului și la pagubele provocate;</li>
+                    <li><strong>Important!</strong> dacă actele cu referință la cazul asigurat sunt perfectate într-o limbă necunoscută de dvs. indicați nota: „Nu înțeleg limba”;</li>
+                    <li>prezentați fila II „Duplicat” a certificatului de asigurare Carte Verde organului de poliție sau persoanei prejudiciate;</li>
+                    <li>anunțați Biroul Național de asigurare, din țara respectivă, despre producerea accidentului (adresele Birourilor Naționale sunt plasate pe versoul certificatului Carte Verde);</li>
+                    <li>înștiințați timp de 48 de ore asigurătorul care a emis certificatul de asigurare Carte Verde despre producerea accidentului rutier și circumstanțele acestuia;</li>
+                </ul>
+            </section>
+            </div>
+        </div>
+        <div>
+            <h2 class="toggle-heading" onclick="toggleContent('content3')"> Asigurare Casco <span class="toggle-arrow"></span></h2> 
+            <div class="content" id="content3">
+                <section>
+                    <h3>I: Asigurarea CASCO</h3>
+                    <p><strong>Asigurarea CASCO</strong> este o poliță optională ce oferă protecție pentru autovehiculul dumneavoastră, acoperind diverse situații neprevăzute, cum ar fi accidente, furt, vandalism sau condiții meteorologice extreme.</p>
+                    <p><strong>Acoperire extinsă:</strong></p>
+                    <ul>
+                        <li>Daunele produse vehiculului în caz de accident;</li>
+                        <li>Furtul sau tentativa de furt;</li>
+                        <li>Pagube cauzate de evenimente naturale (inundații, grindină, etc.);</li>
+                        <li>Vandalism;</li>
+                        <li>Incendii;</li>
+                        <li>Alte evenimente nedorite.</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>II. Condiții Generale:</h3>
+                    <ul>
+                        <li>Autovehiculul trebuie să fie înmatriculat în Republica Moldova;</li>
+                        <li>Documente necesare: certificat de înmatriculare a autovehiculului, cartea de identitate a vehiculului;</li>
+                        <li>Asigurarea CASCO poate fi încheiată atât pentru autoturisme, cât și pentru alte tipuri de vehicule.</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>III. Prima de Asigurare:</h3>
+                    <p>Prima de asigurare CASCO depinde de mai mulți factori:</p>
+                    <ul>
+                        <li>Tipul și valoarea autovehiculului;</li>
+                        <li>Suma asigurată;</li>
+                        <li>Istoricul de daune al asiguratului;</li>
+                        <li>Alte caracteristici specifice vehiculului.</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h3>IV: Procedura în caz de daună:</h3>
+                    <ul>
+                        <li>Anunțați imediat asigurătorul despre eveniment;</li>
+                        <li>Păstrați documente relevante (procese verbale de la poliție, fotografii, etc.);</li>
+                        <li>Prezentați daunele asiguratorului pentru evaluare;</li>
+                        <li>Asiguratorul va despăgubi costurile conform condițiilor poliței CASCO.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+            
+            
+    </div>
+    <div class="contact-buttons-container">
+        <p class="contact-email">
+            
+             <a href="mailto:info@asigvital.md">Comandă acum </a>
+        </p>
+        
+    </div>
+</div>
+  
+
+
+
+    
+    
+    <footer>
+        <div>
+            <p>&copy; <span id="currentYear"></span> BAR Asigvital SRL. All rights reserved.</p>
+            
+         
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

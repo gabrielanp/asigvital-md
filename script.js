@@ -170,3 +170,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.toggle-heading').forEach(function (element) {
+        element.addEventListener('click', function () {
+            // Toggle the 'wrap' class on the next sibling div
+            const contentDiv = this.nextElementSibling;
+            contentDiv.classList.toggle('wrap');
+
+            // Toggle the 'arrow-up' class on the arrow span
+            const arrow = this.querySelector('.toggle-arrow');
+            arrow.classList.toggle('arrow-up');
+        });
+    });
+});
+function toggleContent(contentId) {
+    var content = document.getElementById(contentId);
+    var arrow = content.previousElementSibling.querySelector('.toggle-arrow');
+
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        arrow.classList.remove('rotate');
+    } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        arrow.classList.add('rotate');
+    }
+}
