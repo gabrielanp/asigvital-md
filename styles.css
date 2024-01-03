@@ -673,7 +673,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0.5em;
-            height: 170px;
+            height: 150px;
             /* Adjust padding as needed */
         }
     
@@ -767,7 +767,7 @@
             padding: 1em;
             background-color: #ffffff;
             display: flex;
-            height: 180px;
+            height: 210px;
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
             gap: 5px; /* Adjust the gap between grid items */
             /* Display insurance blocks next to each other */
@@ -785,7 +785,7 @@
             padding: 0em;
             border-radius: 4px;
             font-size: 10px;
-            height: 180px;
+            height: 205px;
         }
     
         .insurance-block img {
