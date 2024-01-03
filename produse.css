@@ -147,4 +147,15 @@ h1 {
     .side-container {
         flex: 1 100%; /* Stack elements on smaller screens */
     }
+
+
+    .section-container {
+        flex-direction: column; /* Stack sections vertically in mobile view */
+    }
+
+    .contact-buttons-container {
+        order: -1; /* Move the contact-buttons-container to the top in mobile view */
+        font-size: 20px;
+       
+    }
 }
