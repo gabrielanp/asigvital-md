@@ -6,16 +6,18 @@ body.despre-noi-page nav a.despre-noi {
     border-radius: 8px; /* Adding border-radius for rounded corners */
     padding: 8px 16px; /* Adjust padding for better spacing */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
-    background-image: url(mission.png);
+    
 }
+
 #despre-noi-section,
 #de-ce-asigvital-section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: #4636c5;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: #4636c5; /* Semi-transparent black background */
+    
 }
 
 h2,
