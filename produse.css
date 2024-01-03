@@ -156,6 +156,17 @@ h1 {
     .contact-buttons-container {
         order: -1; /* Move the contact-buttons-container to the top in mobile view */
         font-size: 20px;
-       
+        text-align: center;
+        display: block; /* Make the anchor element a block-level element */
+        width: 100%; /* Set the width to 100% to span the entire width */
+        padding: 10px; /* Add padding for better visual appearance */
+        margin: 10px 0; /* Add margin for spacing */
+        background-color: #4636c5; /* Add a background color */
+        color: white; /* Set text color to white */
+        text-decoration: none; /* Remove underline from the link */
     }
+    .contact-buttons-container a {
+        text-align: center;
+    }
+    
 }
