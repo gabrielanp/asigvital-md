@@ -760,7 +760,7 @@
             padding-left: 1em;
             padding-right: 2em;
             height: 350px;
-            width:fit-content;
+            width:370px;
            
             /* Adjust padding as needed */
         }
@@ -768,7 +768,7 @@
             background-color: rgba(255, 255, 255, 0.95);
             padding:1em;
             height: 240px;
-          
+            width: 320px;
           
         }
     
@@ -778,6 +778,7 @@
             color: #281997;
             margin-left: 1cm;
             padding: 2%;
+            width: 320px;
         }
           
           .slogan1 {
