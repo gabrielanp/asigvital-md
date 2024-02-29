@@ -144,7 +144,7 @@
     .phone {
         height: 20px;
         margin-left: 0cm;
-        
+       
         margin-top: 0em;
     }
     .slog{
@@ -551,15 +551,16 @@
 .phone-container {
     display: flex;
     justify-content: space-between;
+    color:#F8EBFF;
     
       
     
 }
-.phone-container.hover{
+.phone-container p{
    
         box-shadow: 10px 10px 10px rgb(125, 128, 163);
         border-radius: 20px;
-        background-color: #4636c5;
+        background-color: #1d0e88;
     
 }
 
@@ -595,7 +596,7 @@
 
         
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         body {
             font-family: 'Monserrat', sans-serif;
             margin: 0;
@@ -671,15 +672,15 @@
        
         .contact-email {
             text-align: left;
-            margin-left: 1cm;
+            margin-left: 1.5cm;
             margin-right: 0cm;
-            padding: 0%;
-            font-size: 0.5em;
+            padding-left: 2%;
+            font-size: 0.6em;
             font-weight: bold;
             border: 2px solid #06021f;
             background-color: #06021f;
             box-sizing: border-box;
-            border-radius: 10px;
+            border-radius: 2px;
             display: flex;
             align-items: left;
             
@@ -754,9 +755,9 @@
         }
         
         .block {
-            display:flex;
             
-            
+            padding-left: 2em;
+            padding-right: 2em;
             height: 400px;
             /* Adjust padding as needed */
         }
@@ -764,15 +765,8 @@
             background-color: rgba(255, 255, 255, 0.95);
             
             height: 250px;
-            width: 280px;
-          
             
-                
-                padding-left: 0em;
-                padding-right: 2em;
-                padding-top: 2em;
-                padding-bottom: 2em;
-                border-radius: 5px;
+          
         }
     
         .slogan {
@@ -791,7 +785,7 @@
               margin-left: 1cm;
               margin-top: 0%;
               padding: 0%;
-              width: 200px;
+              
     
           }
     
@@ -803,7 +797,7 @@
               font-style: italic;
               margin-left: 1cm;
               margin-right: 1cm;
-            width: 250px;
+            width: 300px;
           }
         .contact-box {
             text-align: center;
