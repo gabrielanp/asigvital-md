@@ -598,17 +598,18 @@
     
     @media only screen and (max-width: 800px) {
         body {
-            font-family: 'Monserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #333;
-            background-attachment: fixed;
-            
-        }
+                font-family: 'Monserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #333;
+                background-attachment: fixed;
+                overflow-x: hidden;
+                /* Add this line to hide horizontal overflow */
+            }
         .background-container {
                     background-image: url('pexels-mikhail-nilov-7731402.jpg');
                     /* Set background image for the container */
@@ -738,7 +739,7 @@
     
     
         header img {
-            height: 3cap;
+            height: 50px;
             margin-left: 0.5cm;
             cursor: pointer;
             margin-top: 1em;
@@ -756,15 +757,15 @@
         
         .block {
             
-            padding-left: 2em;
-            padding-right: 2em;
+            padding-left: 1em;
+            padding-right: 1em;
             height: 400px;
             /* Adjust padding as needed */
         }
         .slog {
             background-color: rgba(255, 255, 255, 0.95);
-            
-            height: 250px;
+            padding:1em;
+            height: auto;
             
           
         }
@@ -822,7 +823,7 @@
         }
     
         .hands-image {
-            max-width: 0%;
+            
             height:200px;
             margin-left: 0em;
             /* Adjust margin as needed */
@@ -833,8 +834,9 @@
         }
     
         .hands-image img {
-            width: auto;
-            height: 200px;
+            max-width: 100%;
+           
+            height: auto;
             display: block;
             border-radius: 15px;
             /* Match the border-radius with the parent div for consistency */
