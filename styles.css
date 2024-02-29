@@ -596,7 +596,7 @@
 
         
     
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 700px) {
         body {
                 font-family: 'Monserrat', sans-serif;
                 margin: 0;
@@ -759,7 +759,7 @@
             
             padding-left: 1em;
             padding-right: 1em;
-            height: 400px;
+            height: 350px;
             /* Adjust padding as needed */
         }
         .slog {
@@ -784,6 +784,7 @@
               font-style: italic;
               color: #0d0452;
               margin-left: 1cm;
+            margin-right: 1cm;
               margin-top: 0%;
               padding: 0%;
               
