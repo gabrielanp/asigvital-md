@@ -1,5 +1,6 @@
 body.produse-page nav a.produse {
     /* Styling for the "Produse" link in the navigation bar on produse.html */
+    font-family: 'Montserrat', sans-serif;
     box-shadow: 10px 10px 10px rgb(125, 128, 163);
     border-radius: 8px;
     display: flex;

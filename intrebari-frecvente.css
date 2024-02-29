@@ -2,6 +2,7 @@
 
 body.intrebari-frecvente-page nav a.intrebari-frecvente {
     /* Styling for the "Produse" link in the navigation bar on produse.html */
+    font-family: 'Montserrat', sans-serif;
     border: 2px solid #4636c5;
     border-radius: 8px; /* Adding border-radius for rounded corners */
     padding: 8px 16px; /* Adjust padding for better spacing */

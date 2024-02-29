@@ -1,23 +1,35 @@
 @media screen {
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Montserrat',            sans-serif;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         background-size: cover;
+        
         background-position: center;
         background-repeat: no-repeat;
         color: #333;
         background-attachment: fixed;
     }
-
+        .background-container {
+            background-image: url('pexels-mikhail-nilov-7731402.jpg');
+            /* Set background image for the container */
+            background-size: cover;
+            /* Make the background image cover the entire container */
+            background-position: center top;
+            /* Center the background image horizontally and start from the top */
+            background-repeat: no-repeat;
+            /* Do not repeat the background image */
+        }
+   
     header {
         display: flex;
         align-items: right;
         justify-content: space-between;
-        background-color: #ffffff;
+       
         margin: 0%;
         color: #ffffff;
+        
     }
 
     header h1 {
@@ -55,20 +67,21 @@
         margin-right: 0.5cm;
         padding: 8px;
         font-size: 1em;
-        font-weight: bold;
-        border: 2px solid #4636c5;
-        background-color: #4636c5;
+        font-weight: normal;
+        border: 2px solid #06021f;
+        background-color: #06021f;
         box-sizing: border-box;
-        border-radius: 20px;
+        border-radius: 2px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 150px;
+       
+        width: 180px;
+        height: 50px;
     }
     .contact-email:hover{
         box-shadow: 10px 10px 10px rgb(125, 128, 163);
         border-radius: 20px;
-        background-color: #4636c5;
+        background-color: #06021f;
     }
     .afla {
         text-align: center;
@@ -134,25 +147,58 @@
         
         margin-top: 0em;
     }
+    .slog{
+        background-color: rgba(255, 255, 255, 0.95);
+        justify-content: center;
+        padding-left: 0em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        border-radius: 5px;
+    }
     .block {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns */
-        gap: 0px; /* Adjust the gap between grid items */
-        justify-content: space-between;
+      
+        
+        display: flex;
+        
+       
         align-items: center;
-        padding: 2em;
-        height: 550px;
+        padding-left: 20em;
+        padding-right: 20em;
+        
+        height: 500px;
+        width: 900px;
         /* Adjust padding as needed */
     }
 
     .slogan {
         font-size: 2.5em;
         font-style: italic;
-        color: #4636c5;
+        color: #281997;
         margin-left: 2cm;
         padding: 0%;
+        margin-top: 3%;
+        font-weight:300;
     }
+        .slogan1 {
+            font-size: 2em;
+            font-style: bolder;
+            font-style: italic;
+            color: #0d0452;
+            margin-left: 2cm;
+            margin-top: 0%;
+            padding: 0%;
+            width: 400px;
 
+        }
+ .viitorul {
+     font-size: 1.2em;
+     padding-right: 4em;
+     padding-top: 0em;
+     font-style: italic;
+     margin-left: 2cm;
+     margin-right: 1cm;
+ }
     .contact-box {
         text-align: center;
         margin: 0;
@@ -205,31 +251,36 @@
     }
 
     nav {
+        
+        width: 100%;
         display: flex;
         justify-content: center;
-        background-color: #ffffff;
+       
         position: sticky;
         top: 0;
         z-index: 1000;
     }
     
     nav a:hover {
+        
         box-shadow: 10px 10px 10px rgb(125, 128, 163);
-        border-radius: 8px;
+        border-radius: 25px;
 
     }
     nav a {
-        color: #4636c5;
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #2f209f;
         text-decoration: none;
         padding: 1em;
         margin: 0 1em;
+        border-radius: 25px;
     }
     
     /* Style for the active link */
     nav a.active {
         background-color: #4636c5;
         color: white;
-        border-radius: 8px; /* Add border-radius for rounded corners */
+        border-radius: 25px; /* Add border-radius for rounded corners */
     }
     
 
@@ -546,7 +597,7 @@
     
     @media only screen and (max-width: 600px) {
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Monserrat', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -555,7 +606,17 @@
             background-repeat: no-repeat;
             color: #333;
             background-attachment: fixed;
-            background-color: #ffffff;
+            
+        }
+        .background-container {
+                    background-image: url('pexels-mikhail-nilov-7731402.jpg');
+                    /* Set background image for the container */
+                    background-size: cover;
+                    /* Make the background image cover the entire container */
+                    background-position: center top;
+                    /* Center the background image horizontally and start from the top */
+                    background-repeat: no-repeat;
+                    /* Do not repeat the background image */
         }
         .social-icon {
             display: inline-block;
@@ -570,7 +631,7 @@
             display: flex;
             align-items: right;
             
-            background-color: white;
+           
             margin: 0%;
             color: #ffffff;
         }
@@ -613,18 +674,19 @@
             margin-left: 1cm;
             margin-right: 0cm;
             padding: 0%;
-            font-size: 0.7em;
+            font-size: 0.5em;
             font-weight: bold;
-            border: 2px solid #4636c5;
-            background-color: #4636c5;
+            border: 2px solid #06021f;
+            background-color: #06021f;
             box-sizing: border-box;
-            border-radius: 20px;
+            border-radius: 10px;
             display: flex;
             align-items: left;
             
             width: 110px;
-            height: 50px;
+            height: 40px;
         }
+              
        
         .afla {
             text-align: center;
@@ -692,24 +754,57 @@
         }
         
         .block {
-            display: flex;
+            display:flex;
             
-          
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.5em;
-            height: 150px;
+            
+            height: 400px;
             /* Adjust padding as needed */
+        }
+        .slog {
+            background-color: rgba(255, 255, 255, 0.95);
+            
+            height: 250px;
+            width: 280px;
+          
+            
+                
+                padding-left: 0em;
+                padding-right: 2em;
+                padding-top: 2em;
+                padding-bottom: 2em;
+                border-radius: 5px;
         }
     
         .slogan {
-            font-size: 1em;
+            font-size: 1.2em;
             font-style: italic;
-            color: #4636c5;
+            color: #281997;
             margin-left: 1cm;
             padding: 0%;
         }
+          
+          .slogan1 {
+              font-size: 1.2em;
+              font-style: bolder;
+              font-style: italic;
+              color: #0d0452;
+              margin-left: 1cm;
+              margin-top: 0%;
+              padding: 0%;
+              width: 200px;
     
+          }
+    
+          .viitorul {
+              font-size: 0.8em;
+              padding-right: 1em;
+              padding-top: 0em;
+              padding-right: 1em;
+              font-style: italic;
+              margin-left: 1cm;
+              margin-right: 1cm;
+            width: 250px;
+          }
         .contact-box {
             text-align: center;
             margin: 0;
@@ -774,16 +869,18 @@
         }
     
         nav a {
+            background-color: rgba(255, 255, 255, 0.7);
             border-bottom: 1px solid #fff;
             width: 100%;
             text-align: center;
+            border-radius: 25px;
         }
     
         /* Style for the active link */
         nav a.active {
             background-color: #4636c5;
             color: white;
-            border-radius: 8px; /* Add border-radius for rounded corners */
+            border-radius: 25px; /* Add border-radius for rounded corners */
         }
     
     
