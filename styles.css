@@ -12,7 +12,7 @@
         background-attachment: fixed;
     }
     .background-container {
-            background-image: url('hands.jpg');
+            background-image: url('pexels-mikhail-nilov-7731402.jpg');
             /* Set background image for the container */
             background-size: cover;
             /* Make the background image cover the entire container */
@@ -28,7 +28,7 @@
         justify-content: space-between;
        
         margin: 0%;
-        color: #ffffff;
+        /*color: #ffffff;*/
         
     }
 
