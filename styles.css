@@ -758,15 +758,17 @@
         .block {
             
             padding-left: 1em;
-            padding-right: 1em;
+            padding-right: 2em;
             height: 350px;
+            width:fit-content;
+           
             /* Adjust padding as needed */
         }
         .slog {
             background-color: rgba(255, 255, 255, 0.95);
             padding:1em;
-            height: auto;
-            
+            height: 240px;
+          
           
         }
     
@@ -775,7 +777,7 @@
             font-style: italic;
             color: #281997;
             margin-left: 1cm;
-            padding: 0%;
+            padding: 2%;
         }
           
           .slogan1 {
@@ -784,9 +786,9 @@
               font-style: italic;
               color: #0d0452;
               margin-left: 1cm;
-            margin-right: 1cm;
+              margin-right: 1cm;
               margin-top: 0%;
-              padding: 0%;
+              padding: 2%;
               
     
           }
@@ -799,7 +801,7 @@
               font-style: italic;
               margin-left: 1cm;
               margin-right: 1cm;
-            width: 300px;
+            
           }
         .contact-box {
             text-align: center;
