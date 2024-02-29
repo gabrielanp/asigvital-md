@@ -11,8 +11,8 @@
         color: #333;
         background-attachment: fixed;
     }
-        .background-container {
-            background-image: url('pexels-mikhail-nilov-7731402.jpg');
+    .background-container {
+            background-image: url('hands.jpg');
             /* Set background image for the container */
             background-size: cover;
             /* Make the background image cover the entire container */
@@ -20,7 +20,7 @@
             /* Center the background image horizontally and start from the top */
             background-repeat: no-repeat;
             /* Do not repeat the background image */
-        }
+    }
    
     header {
         display: flex;
