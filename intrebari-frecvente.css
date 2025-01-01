@@ -9,7 +9,7 @@ body.intrebari-frecvente-page nav a.intrebari-frecvente {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adding a shadow effect */
 }
  #bnm-image {
-              width: 80%; /* Makes the image as wide as its container */
-              max-width: 80%; /* Ensures it doesn't exceed the width of the page */
+              width: 50%; /* Makes the image as wide as its container */
+              max-width: 50%; /* Ensures it doesn't exceed the width of the page */
               height: auto; /* Maintains aspect ratio */
             }
