@@ -180,7 +180,7 @@
     }
 
     .slogan {
-        font-size: 2.5em;
+        font-size: 4.5em;
         font-style: italic;
         color: #281997;
         margin-left: 2cm;
@@ -189,7 +189,7 @@
         font-weight:300;
     }
         .slogan1 {
-            font-size: 2em;
+            font-size: 3em;
             font-style: bolder;
             font-style: italic;
             color: #0d0452;
@@ -200,7 +200,7 @@
 
         }
  .viitorul {
-     font-size: 1.2em;
+     font-size: 2.2em;
      padding-right: 4em;
      padding-top: 0em;
      font-style: italic;
@@ -783,7 +783,7 @@
         }
         
         .slogan, .slogan1 {
-            font-size: 1.2em; /* Responsive text size */
+            font-size: 2.2em; /* Responsive text size */
             font-style: italic;
             color: #0d0452; /* Text color */
             margin: 0; /* Remove default margin */
@@ -813,7 +813,7 @@
             width: auto; /* Let the button width adjust dynamically */
         }
           .viitorul {
-              font-size: 0.8em;
+              font-size: 1.3em;
               padding-right: 1em;
               padding-top: 0em;
               padding-right: 1em;
