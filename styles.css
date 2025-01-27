@@ -766,8 +766,8 @@
         }
         .slog {
             background-color: rgba(255, 255, 255, 0.95);
-            padding:1em;
-            height: 240px;
+            padding:0em;
+            height: 320px;
             width: 320px;
           
         }
@@ -778,7 +778,7 @@
             color: #281997;
             margin-left: 1cm;
             padding: 2%;
-            width: 320px;
+            width: 300px;
         }
           
           .slogan1 {
@@ -892,7 +892,7 @@
             display: flex;
             height: 210px;
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-            gap: 5px; /* Adjust the gap between grid items */
+            gap: 1px; /* Adjust the gap between grid items */
             /* Display insurance blocks next to each other */
             
         }
@@ -1050,7 +1050,7 @@
         display: flex;
         justify-content: space-around;
         background-color: #ffffff;
-        padding: 10px;
+        padding: 5px;
         color: white;
         height: 200px;
         }
