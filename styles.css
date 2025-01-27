@@ -180,12 +180,12 @@
     }
 
     .slogan {
-        font-size: 4.5em;
+        font-size: 4em;
         font-style: italic;
         color: #281997;
         margin-left: 2cm;
-        padding: 0%;
-        margin-top: 3%;
+        padding: 0;
+        margin-top: 0;
         font-weight:300;
     }
         .slogan1 {
@@ -194,13 +194,13 @@
             font-style: italic;
             color: #0d0452;
             margin: 0 auto; /* Center horizontally */
-            padding: 0.5em 0; /* Add some space above and below */
+            padding: 0; /* Add some space above and below */
             width: 100%; /* Let it adapt to the container */
             max-width: 600px; /* Optional: Limit the text width for readability */
 
         }
  .viitorul {
-     font-size: 2.2em;
+     font-size: 1.2em;
      padding-right: 4em;
      padding-top: 0em;
      font-style: italic;
@@ -782,14 +782,23 @@
             
           
         }
-       
-            
-        .slogan, .slogan1 {
+       .slogan {
             font-size: 2.2em; /* Responsive text size */
             font-style: italic;
             color: #0d0452; /* Text color */
             margin: 0; /* Remove default margin */
-            padding: 1em 0; /* Add spacing around text */
+            padding: 0; /* Add spacing around text */
+            width: 100%; /* Take full width */
+            max-width: 500px; /* Limit max width for readability */
+            
+        }
+            
+        .slogan1 {
+            font-size: 1.7em; /* Responsive text size */
+            font-style: italic;
+            color: #0d0452; /* Text color */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Add spacing around text */
             width: 100%; /* Take full width */
             max-width: 500px; /* Limit max width for readability */
             
@@ -816,7 +825,7 @@
             width: auto; /* Let the button width adjust dynamically */
         }
           .viitorul {
-              font-size: 1.3em;
+              font-size: 1.2em;
               padding-right: 1em;
               padding-top: 0em;
               padding-right: 1em;
@@ -912,7 +921,7 @@
             background-color: #ffffff;
             padding: 5px;
             color: white;
-            height: 200px;
+            height: 550px;
             
         }
         
@@ -921,7 +930,7 @@
             
             text-align: center;
             font-size: 0.8em;
-            height: 250px;
+            height: 350px;
             width: 80%;
             color: #4636c5;
             flex: 1; /* Adjust the flex property to control the size of each box */
