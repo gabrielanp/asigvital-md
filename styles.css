@@ -150,20 +150,26 @@
     .slog{
         background-color: rgba(255, 255, 255, 0.95);
         justify-content: center;
-        padding-left: 2em;
-        padding-right: 0em;
+        padding-left: 0em;
+        padding-right: 2em;
         padding-top: 2em;
         padding-bottom: 2em;
         border-radius: 5px;
     }
-   .block {
-    display: flex;
-    align-items: center;
-    padding-left: 2em; /* Adjusted to remove excessive right shift */
-    padding-right: 0em; /* Adjusted for balanced spacing */
-    height: 500px;
-    width: 900px;
-}
+    .block {
+      
+        
+        display: flex;
+        
+       
+        align-items: center;
+        padding-left: 20em;
+        padding-right: 20em;
+        
+        height: 500px;
+        width: 900px;
+        /* Adjust padding as needed */
+    }
 
     .slogan {
         font-size: 2.5em;
@@ -588,6 +594,7 @@
     height: 30px; /* Adjust the height as needed */
 }
 
+        
         
 /* Mobile Version Styles */
 @media only screen and (max-width: 700px) {
