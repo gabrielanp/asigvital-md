@@ -676,11 +676,11 @@
       /* Slog Section */
     .slog {
         background-color: #fff;
-        padding: 1em;
-        margin: 1em;
+        width: 313px;
+        height: 432px;
         border-radius: 10px;
         text-align: left;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       
     }
 
     .slog .slogan {
