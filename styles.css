@@ -755,10 +755,10 @@
             box-sizing: border-box; /* Include padding in width/height */
             overflow: hidden; /* Prevent content from spilling out */
             word-wrap: break-word; /* Ensure long words break on smaller screens */
-            height: auto; /* Ensure it adjusts dynamically based on content */
+            height: calc(100vh - 80px);
                 }
        .slog {
-            background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+            
             display: flex; /* Enable flexbox */
             flex-direction: column; /* Stack content vertically */
             align-items: center; /* Center horizontally */
@@ -769,8 +769,8 @@
             width: 100%; /* Ensure it stretches across the screen */
             height: 100vh; /* Full screen height */
             margin: 0 auto; /* Center horizontally */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            border-radius: 10px; /* Rounded corners */
+            
+          
         }
         
         .slogan, .slogan1 {
