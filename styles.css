@@ -673,8 +673,8 @@
         color: white;
     }
 
-    /* Text Section */
-    .intro-text {
+    /* Slog Section */
+    .slog {
         background-color: #fff;
         padding: 1em;
         margin: 1em;
@@ -683,38 +683,78 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .intro-text h1 {
-        font-size: 1.2em;
+    .slog .slogan {
+        font-size: 1em;
         margin-bottom: 0.5em;
     }
 
-    .intro-text p {
-        font-size: 1em;
+    .slog .slogan1 {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+    }
+
+    .slog .viitorul {
+        font-size: 0.8em;
         line-height: 1.5;
     }
 
-    /* Contact Button */
-    .contact-button {
-        background-color: #000;
-        color: #fff;
-        padding: 0.8em 1.5em;
-        text-align: center;
-        border-radius: 8px;
-        font-size: 1em;
-        margin: 1em auto;
-        display: block;
-        width: fit-content;
+    .contact-buttons-container {
+        margin-top: 1em;
     }
 
-    /* Facts Section */
-    .facts {
+    .contact-email {
+        font-size: 0.8em;
+        background-color: #000;
+        color: #fff;
+        padding: 0.8em;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .contact-email a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Insurance Blocks */
+    .insurances {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1em;
         padding: 1em;
     }
 
-    .fact {
+    .insurance-block {
+        background-color: #fff;
+        padding: 1em;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .insurance-block img {
+        max-width: 50px;
+        margin-bottom: 0.5em;
+    }
+
+    .insurance-block h2 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .insurance-block p {
+        font-size: 0.8em;
+    }
+
+    /* Purple Block */
+    .purple-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    .purple-block .box {
         background-color: #4636c5;
         color: #fff;
         padding: 1em;
@@ -723,18 +763,38 @@
         font-size: 1em;
     }
 
-    /* Partner Logos */
-    .client-logos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        gap: 10px;
-        padding: 1em;
-        justify-items: center;
+    .purple-block .box img {
+        max-width: 40px;
+        margin-bottom: 0.5em;
     }
 
-    .logo-container img {
-        max-width: 50px;
-        max-height: 50px;
+    /* Testimonials */
+    .testimonial-block {
+        background-color: #fff;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 0.9em;
+    }
+
+    .testimonial-block h2 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .testimonial-block p {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+    }
+
+    .testimonial-block .arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        margin-top: 1em;
     }
 
     /* Footer */
