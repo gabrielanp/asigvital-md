@@ -676,23 +676,6 @@
             cursor: pointer; /* Add cursor pointer on hover */
         }
        
-        .contact-email {
-            text-align: left;
-            margin-left: 1.5cm;
-            margin-right: 0cm;
-            padding-left: 2%;
-            font-size: 0.6em;
-            font-weight: bold;
-            border: 2px solid #06021f;
-            background-color: #06021f;
-            box-sizing: border-box;
-            border-radius: 2px;
-            display: flex;
-            align-items: left;
-            
-            width: 110px;
-            height: 40px;
-        }
               
        
         .afla {
@@ -762,40 +745,64 @@
         
         .block {
             
-            padding: 1em;
-            max-width: 95%; /* Leave smaller margins for tablets */
-           
-            /* Adjust padding as needed */
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            padding: 1em; /* Consistent padding */
+            max-width: 90%; /* Prevent horizontal overflow */
+            margin: 0 auto; /* Center the block on the page */
+            box-sizing: border-box; /* Include padding in width/height */
+            overflow: hidden; /* Prevent content from spilling out */
+            word-wrap: break-word; /* Ensure long words break on smaller screens */
+            height: auto; /* Ensure it adjusts dynamically based on content */
+                }
+       .slog {
+            background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+            display: flex; /* Enable flexbox */
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center horizontally */
+            justify-content: center; /* Center vertically */
+            text-align: center; /* Center text inside the container */
+            padding: 2em; /* Padding around the content */
+            max-width: 95%; /* Adjust for responsiveness */
+            width: 100%; /* Ensure it stretches across the screen */
+            height: 100vh; /* Full screen height */
+            margin: 0 auto; /* Center horizontally */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border-radius: 10px; /* Rounded corners */
         }
-        .slog {
-             padding: 1em; /* Reduce padding for smaller screens */
-             max-width: 95%; /* Leave a smaller margin for mobile devices */
-          
-        }
-    
-        .slogan {
-            font-size: 1.2em;
+        
+        .slogan, .slogan1 {
+            font-size: 1.2em; /* Responsive text size */
             font-style: italic;
-            color: #281997;
-            margin-left: 1cm;
-            padding: 2%;
-            width: 300px;
+            color: #0d0452; /* Text color */
+            margin: 0; /* Remove default margin */
+            padding: 1em 0; /* Add spacing around text */
+            width: 100%; /* Take full width */
+            max-width: 500px; /* Limit max width for readability */
         }
-          
-          .slogan1 {
-              font-size: 1.2em;
-              font-style: bolder;
-              font-style: italic;
-              color: #0d0452;
-              margin-left: 1cm;
-              margin-right: 1cm;
-              margin-top: 0%;
-              padding: 1em;
-              width: 280px;
-              
-    
-          }
-    
+        
+        .contact-buttons-container {
+            margin-top: 1em; /* Space above the button */
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            width: 100%; /* Ensure container spans full width */
+        }
+        
+        .contact-email {
+            text-align: center; /* Center button text */
+            font-size: 1em; /* Adjust font size */
+            font-weight: bold;
+            border: 2px solid #06021f;
+            background-color: #06021f;
+            color: #fff; /* White text */
+            padding: 0.8em 1em; /* Add spacing inside the button */
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            cursor: pointer; /* Pointer cursor for button */
+            width: auto; /* Let the button width adjust dynamically */
+        }
           .viitorul {
               font-size: 0.8em;
               padding-right: 1em;
