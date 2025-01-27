@@ -673,19 +673,29 @@
         color: white;
     }
 
-    /* Slog Section */
+      /* Slog Section */
     .slog {
         background-color: #fff;
         padding: 1em;
         margin: 1em;
         border-radius: 10px;
-        text-align: center;
+        text-align: left;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .slog .slogan {
-        font-size: 1em;
+        font-size: 0.9em;
         margin-bottom: 0.5em;
+    }
+
+    .slog .slogan1 {
+        font-size: 0.8em;
+        margin-bottom: 0.5em;
+    }
+
+    .slog .viitorul {
+        font-size: 0.7em;
+        line-height: 1.5;
     }
 
     .slog .slogan1 {
@@ -715,7 +725,6 @@
         color: #fff;
         text-decoration: none;
     }
-
     /* Insurance Blocks */
     .insurances {
         display: grid;
