@@ -767,7 +767,7 @@
             padding: 2em; /* Padding around the content */
             max-width: 95%; /* Adjust for responsiveness */
             width: 100%; /* Ensure it stretches across the screen */
-            height: 100vh; /* Full screen height */
+            height: 80vh; /* Full screen height */
             margin: 0 auto; /* Center horizontally */
             
           
@@ -871,6 +871,7 @@
             flex-direction: column;
             align-items: center;
             width: 100%;
+            margin-bottom:1em;
         }
     
         nav.open {
@@ -894,14 +895,11 @@
     
     
         .insurances {
-            margin: 0 auto;
-            text-align: center;
-            padding: 0;
+           display: flex;
+            justify-content: space-around;
             background-color: #ffffff;
-            display: flex;
-            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-            gap: 0px; /* Adjust the gap between grid items */
-            /* Display insurance blocks next to each other */
+            padding: 5px;
+            color: white;
             height: 200px;
             
         }
