@@ -156,20 +156,14 @@
         padding-bottom: 2em;
         border-radius: 5px;
     }
-    .block {
-      
-        
-        display: flex;
-        
-       
-        align-items: center;
-        padding-left: 20em;
-        padding-right: 20em;
-        
-        height: 500px;
-        width: 900px;
-        /* Adjust padding as needed */
-    }
+   .block {
+    display: flex;
+    align-items: center;
+    padding-left: 0em; /* Adjusted to remove excessive right shift */
+    padding-right: 0em; /* Adjusted for balanced spacing */
+    height: 500px;
+    width: 900px;
+}
 
     .slogan {
         font-size: 2.5em;
@@ -731,6 +725,8 @@
         grid-template-columns: 1fr;
         gap: 1em;
         padding: 1em;
+        margin-bottom: 2em; /* Ensure spacing below the insurance blocks */
+
     }
 
     .insurance-block {
@@ -761,6 +757,8 @@
         grid-template-columns: 1fr;
         gap: 1em;
         padding: 1em;
+        margin-top: 2em; /* Ensure proper spacing above the purple block */
+
     }
 
     .purple-block .box {
