@@ -151,29 +151,26 @@
        
         margin-top: 0em;
     }
-    .slog{
-       background-color: rgba(255, 255, 255, 0.7); /* 70% transparent white */
-        margin: 0 auto; /* Center the box */
-        padding: 2em; /* Adjust padding as needed */
-        border-radius: 5px; /* Rounded corners */
-        max-width: 90%; /* Keep some space around the box (adjust as needed) */
-        width: 100%; /* Let it adapt to the screen size */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a polished look */
-    }
-     
-    .block {
-      
-        
-        display: flex;
-        
-       
-        align-items: center;
-        padding-left: 20em;
-        padding-right: 20em;
-        
-        height: 500px;
-        width: 900px;
-        /* Adjust padding as needed */
+   .block {
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% transparency */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin: 0 auto; /* Center the block on the page */
+    border-radius: 10px; /* Rounded corners for the block */
+    padding: 2em; /* Inner spacing for the block */
+    max-width: 90%; /* Keep some space around the block */
+    width: 100%; /* Let it adapt to screen size */
+    height: auto; /* Adjust height dynamically based on content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+    .slog {
+        text-align: center; /* Center the text inside the slog */
+        max-width: 100%; /* Make sure it doesn’t exceed the parent block */
+        padding: 1em; /* Add inner padding to separate text from edges */
+        border-radius: 5px; /* Keep slog content slightly rounded */
+        background: transparent; /* Make slog transparent as it's part of block */
     }
 
     .slogan {
@@ -767,10 +764,8 @@
         
         .block {
             
-            padding-left: 1em;
-            padding-right: 2em;
-            height: 350px;
-            width:370px;
+            padding: 1em;
+            max-width: 95%; /* Leave smaller margins for tablets */
            
             /* Adjust padding as needed */
         }
