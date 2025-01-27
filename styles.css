@@ -768,7 +768,7 @@
             background-color: rgba(255, 255, 255, 0.95);
             padding:0em;
             height: 320px;
-            width: 320px;
+            width: 400px;
           
         }
     
@@ -902,13 +902,12 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            flex: 1;
-            margin: 0 1em;
             background-color: white;
             padding: 0em;
             border-radius: 4px;
             font-size: 10px;
-            height: 205px;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     
         .insurance-block img {
