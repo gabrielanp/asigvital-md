@@ -591,6 +591,19 @@
         
 /* Mobile Version Styles */
 @media only screen and (max-width: 700px) {
+  
+
+    * {
+        max-width: 100%; /* Ensure no element exceeds the viewport width */
+        box-sizing: border-box; /* Include padding and borders in the width */
+    }
+    
+    
+    img {
+        max-width: 100%; /* Ensure images do not overflow */
+        height: auto;
+    }
+
     body {
         font-family: 'Montserrat', sans-serif;
         margin: 0;
