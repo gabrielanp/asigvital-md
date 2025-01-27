@@ -595,252 +595,508 @@
 }
 
         
+    
+    @media only screen and (max-width: 700px) {
+        body {
+                font-family: 'Monserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: #333;
+                background-attachment: fixed;
+                overflow-x: hidden;
+                /* Add this line to hide horizontal overflow */
+            }
+        .background-container {
+                    background-image: url('pexels-mikhail-nilov-7731402.jpg');
+                    /* Set background image for the container */
+                    background-size: cover;
+                    /* Make the background image cover the entire container */
+                    background-position: center top;
+                    /* Center the background image horizontally and start from the top */
+                    background-repeat: no-repeat;
+                    /* Do not repeat the background image */
+        }
+        .social-icon {
+            display: inline-block;
+            margin-left: 10px;
+        }
         
-/* Mobile Version Styles */
-@media only screen and (max-width: 700px) {
-  
-
- 
-    body {
-        font-family: 'Montserrat', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        .social-icon-img {
+            width: 30px; /* Adjust the width as needed */
+            height: 30px; /* Adjust the height as needed */
+        }
+        header {
+            display: flex;
+            align-items: right;
+            
+           
+            margin: 0%;
+            color: #ffffff;
+        }
+    
+        header h1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+        }
+    
+        /* Adjusted styles for the phone box in the header */
+        header p {
+            text-align: center;
+            margin-left: 0.7cm;
+            margin-right: 0.4cm;
+            padding: 0%;
+            font-size: 1em;
+            font-weight: bold;
+            border: 1px solid #4636c5;
+            background-color: #4636c5;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            display: flex; /* Added to align content horizontally */
+            align-items: center; /* Added to align content vertically */
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: #4636c5; /* Green background color */
+            color: #fff; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Add cursor pointer on hover */
+        }
+       
+        .contact-email {
+            text-align: left;
+            margin-left: 1.5cm;
+            margin-right: 0cm;
+            padding-left: 2%;
+            font-size: 0.6em;
+            font-weight: bold;
+            border: 2px solid #06021f;
+            background-color: #06021f;
+            box-sizing: border-box;
+            border-radius: 2px;
+            display: flex;
+            align-items: left;
+            
+            width: 110px;
+            height: 40px;
+        }
+              
+       
+        .afla {
+            text-align: center;
+            text-indent: 0%;
+            margin-left: 1cm;
+            margin-right: 0cm;
+            padding: 0%;
+            font-size: 0.7em;
+            font-weight: bold;
+            border: 2px solid #4636c5;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            border-radius: 20px;
+            display: flex;
+            align-items: left;
+            
+            width: 110px;
+            height: 50px;
+        }
+        .afla  img {
+            align-items: left;
+            height: 0.5cm;
+            
+        }
+    
+    
+        .contact-email a {
+            align-items: left;
+        }
+    
+        .afla a {
+            color: #464646;
+            text-decoration: none;
+        }
+    
+    
+        .contact-email a {
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+    
+        .contact-email img {
+            align-items: left;
+            height: 0.5cm;
+            
+        }
+    
+    
+        header img {
+            height: 50px;
+            margin-left: 0.5cm;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        header a {
+            color: inherit; /* Inherit the text color from the parent (white in this case) */
+            text-decoration: none; /* Remove underline style */
+        }
+        .phone {
+            height: 20px;
+            margin-left: 0cm;
+            
+            margin-top: 0em;
+        }
+        
+        .block {
+            
+            padding-left: 1em;
+            padding-right: 2em;
+            height: 350px;
+            width:370px;
+           
+            /* Adjust padding as needed */
+        }
+        .slog {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding:1em;
+            height: 240px;
+            width: 320px;
+          
+        }
+    
+        .slogan {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #281997;
+            margin-left: 1cm;
+            padding: 2%;
+            width: 320px;
+        }
+          
+          .slogan1 {
+              font-size: 1.2em;
+              font-style: bolder;
+              font-style: italic;
+              color: #0d0452;
+              margin-left: 1cm;
+              margin-right: 1cm;
+              margin-top: 0%;
+              padding: 1em;
+              width: 280px;
+              
+    
+          }
+    
+          .viitorul {
+              font-size: 0.8em;
+              padding-right: 1em;
+              padding-top: 0em;
+              padding-right: 1em;
+              font-style: italic;
+              margin-left: 1cm;
+              margin-right: 1cm;
+            
+          }
+        .contact-box {
+            text-align: center;
+            margin: 0;
+            /* Adjust margin as needed */
+        }
+    
+        .contact-box input {
+            width: 200px;
+            /* Adjust width as needed */
+            padding: 0.5em;
+            font-size: 1em;
+        }
+    
+        .contact-box button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            background-color: #4636c5;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .hands-image {
+            
+            height:200px;
+            margin-left: 0em;
+            /* Adjust margin as needed */
+            border-radius: 1px;
+            /* Adjust the border-radius for softer edges */
+            overflow: hidden;
+            position: relative;
+        }
+    
+        .hands-image img {
+            max-width: 100%;
+           
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            /* Match the border-radius with the parent div for consistency */
+        }
+    
+        .gradient-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            /* Adjust the width of the fading effect */
+            height: 100%;
+            background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+            /* Adjust the gradient colors as needed */
+        }
+    
+        nav {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    
+        nav.open {
+            display: flex;
+        }
+    
+        nav a {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-bottom: 1px solid #fff;
+            width: 100%;
+            text-align: center;
+            border-radius: 25px;
+        }
+    
+        /* Style for the active link */
+        nav a.active {
+            background-color: #4636c5;
+            color: white;
+            border-radius: 25px; /* Add border-radius for rounded corners */
+        }
+    
+    
+        .insurances {
+            text-align: center;
+            padding: 1em;
+            background-color: #ffffff;
+            display: flex;
+            height: 210px;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 5px; /* Adjust the gap between grid items */
+            /* Display insurance blocks next to each other */
+            
+        }
+    
+        .insurance-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            margin: 0 1em;
+            background-color: white;
+            padding: 0em;
+            border-radius: 4px;
+            font-size: 10px;
+            height: 205px;
+        }
+    
+        .insurance-block img {
+            margin-top: 0.5em;
+            width: 30px;
+            margin-bottom: 0.1em; /* Adjust as needed */
+        }
+    
+        .insurance-block h2 {
+            color: #5834c8;
+            margin-bottom: 0.5em; /* Adjust as needed */
+            font-size: 1.1em;
+        }
+    
+        .insurance-block p {
+            font-size: 1em;
+            margin-top: 0.5em; /* Adjust as needed */
+        }
+            
+        /* Testimonials Section Styles */
+        .testimonials {
+            display: flex;
+            overflow: hidden;
+            margin-top: 10px; /* Adjust as needed */
+            position: relative;
+            height: 150px;
+            
+        }
+       
+    
+        .arrow-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #4636c5;
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 2; /* Ensure buttons appear above testimonial container */
+        }
+    
+        .prev-button {
+            left: 0;
+        }
+    
+        .next-button {
+            right: 0;
+        }
+        .testimonial-block {
+            margin-left:100px ;
+            margin-right: 100px;
+            text-align: center;
+            margin-bottom: 0px;
+            
+        }
+        .testimonial-block h2{
+            font-size: 15px;
+            
+        }
+        .testimonial-block p{
+            font-size: 12px;
+            
+        }
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Ensure the container takes full width */
+            margin: 0 auto; /* Center the container horizontally */
+          
+        }
+    
+        
+       
+    
+    
+        /* Add this CSS code to your styles.css file */
+    
+        footer {
+            background-color: #5834c8;
+            color: #fff;
+            height: 50px;
+            
+        }
+    
+        
+        footer p {
+            font-size: 11px;
+            margin-top: 0.1cm;
+        }
+        
+        /* Add this CSS code to your styles.css file */
+    
+    
+        .parteneri {
+        text-align: center;
         color: #333;
-        overflow-x: hidden;
-    }
-
-    header {
+        font-size: 1.2em; /* Corrected property from 'size' to 'font-size' */
+        }
+    
+        .client-logos {
+        overflow: hidden;
+        }
+    
+        .logo-carousel {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* Eight equal columns */
+        gap: 0px; /* Adjust the gap between logos */
+        transition: transform 0.5s ease-in-out;
+        margin-left: 10px;
+        }
+    
+        .logo-container {
+        flex: 0 0 auto;
+        margin: 0 8px; /* Add margin to separate logos */
+        
+        }
+    
+        .logo-container img {
+        max-height: 30px; /* Set maximum height for images */
+        width: auto; /* Allow the width to adjust proportionally */
+        margin: 0px;
+        }
+    
+    
+        /* Add this CSS code to your styles.css file */
+    
+    
+        .box img {
+        width: 50px; /* Adjust the width of the icons as needed */
+        height: 50px; /* Adjust the height of the icons as needed */
+        margin-bottom: 10px;
+        }
+    
+    
+        .purple-block {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1em;
-        background-color: rgba(70, 54, 197, 0.9);
-        color: #fff;
-    }
-
-    header img {
-        height: 40px;
-        cursor: pointer;
-    }
-
-    header p {
+        justify-content: space-around;
+        background-color: #ffffff;
+        padding: 10px;
+        color: white;
+        height: 200px;
+        }
+    
+        .box {
+        text-align: center;
         font-size: 0.8em;
-        font-weight: bold;
-        border: 1px solid #4636c5;
-        background-color: #4636c5;
-        color: #fff;
-        padding: 5px;
-        border-radius: 10px;
-        margin: 0.5em 0;
-    }
-
-    header .menu-icon {
-        display: block;
+        height: 150px;
+        color: #4636c5;
+        flex: 1; /* Adjust the flex property to control the size of each box */
+        }
+    
+        .box img {
+        width: 30px; /* Adjust the width of the icons as needed */
+        height: 30px; /* Adjust the height of the icons as needed */
+        margin-bottom: 5px;
+        margin-top: 10px;
+        }
+    
+        .menu-icon {
+        display: block; /* Initially hide the hamburger icon */
         cursor: pointer;
-        margin: 0.5em 0;
-    }
-
-    .menu-icon .bar {
+        }
+    
+        .bar {
         width: 25px;
         height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav.open {
-        display: flex;
-    }
-
-    nav a {
-        color: #2f209f;
-        text-decoration: none;
-        padding: 0.5em 1em;
-        border-radius: 25px;
-        margin: 0.2em 0;
-        background-color: rgba(255, 255, 255, 0.7);
-        text-align: center;
-    }
-
-    nav a.active {
-        background-color: #4636c5;
-        color: white;
-    }
-    .slogan,
-        .slogan1,
-        .viitorul {
-            margin-left: 0;
-            margin-right: 0;
+        background-color: #333;
+        margin: 6px 0;
         }
-    }
-      /* Slog Section */
-    .slog {
-        background-color: #fff;
-        width: 313px;
-        height: 432px;
-        /*border-radius: 10px;*/
-        text-align: left;
-       
-    }
-
-    .slog .slogan {
-        font-size: 0.9em;
-        margin-bottom: 0.5em;
-    }
-
-    .slog .slogan1 {
-        font-size: 0.8em;
-        margin-bottom: 0.5em;
-    }
-
-    .slog .viitorul {
-        font-size: 0.7em;
-        line-height: 1.5;
-    }
-
-    .slog .slogan1 {
-        font-size: 0.9em;
-        margin-bottom: 0.5em;
-    }
-
-    .slog .viitorul {
-        font-size: 0.8em;
-        line-height: 1.5;
-    }
-
-    .contact-buttons-container {
-        margin-top: 1em;
-    }
-
-    .contact-email {
-        font-size: 0.8em;
-        background-color: #000;
-        color: #fff;
-        padding: 0.8em;
-        border-radius: 10px;
-        text-align: center;
-    }
-
-    .contact-email a {
-        color: #fff;
-        text-decoration: none;
-    }
-    /* Insurance Blocks */
-    .insurances {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1em;
-        padding: 1em;
-        margin-bottom: 2em; /* Ensure spacing below the insurance blocks */
-
-    }
-
-    .insurance-block {
-        background-color: #fff;
-        padding: 1em;
-        border-radius: 2px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .insurance-block img {
-        max-width: 50px;
-        margin-bottom: 0.5em;
-    }
-
-    .insurance-block h2 {
-        font-size: 1em;
-        margin-bottom: 0.5em;
-    }
-
-    .insurance-block p {
-        font-size: 0.8em;
-    }
-
-    /* Purple Block */
-    .purple-block {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1em;
-        padding: 1em;
-        margin-top: 2em; /* Ensure proper spacing above the purple block */
-
-    }
-
-    .purple-block .box {
-        background-color: #4636c5;
-        color: #fff;
-        padding: 1em;
-        border-radius: 10px;
-        text-align: center;
-        font-size: 1em;
-    }
-
-    .purple-block .box img {
-        max-width: 40px;
-        margin-bottom: 0.5em;
-    }
-
-    /* Testimonials */
-    .testimonial-block {
-        background-color: #fff;
-        padding: 1em;
-        margin: 1em;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        font-size: 0.9em;
-    }
-
-    .testimonial-block h2 {
-        font-size: 1em;
-        margin-bottom: 0.5em;
-    }
-
-    .testimonial-block p {
-        font-size: 0.9em;
-        margin-bottom: 0.5em;
-    }
-
-    .testimonial-block .arrow {
+        .phone-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5em;
-        margin-top: 1em;
-    }
-
-    /* Footer */
-    footer {
-        background-color: #4636c5;
-        color: #fff;
-        text-align: center;
-        padding: 1em 0;
-    }
-
-    footer div {
-        margin-bottom: 0.5em;
-    }
-
-    footer a {
-        display: inline-block;
-        margin: 0 5px;
-    }
-
-    footer a img {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-
+        justify-content: space-between;
+        }
+    
+        /* styles.css */
+    
+        .nav-link.active {
+        /* Styling for the active navigation link */
+        background-color: white;
+        color: #4636c5;
+        border: 2px solid #4636c5;
+        border-radius: 8px;
+        padding: 8px 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        } }
+    
+    
+    
