@@ -12,7 +12,7 @@
         background-attachment: fixed;
     }
     .background-container {
-            background-image: url('pexels-mikhail-nilov-7731402.jpg');
+            background-image: url('pexels-radio-photo-patrika-sathi-320381513-136842461.jpg');
             /* Set background image for the container */
             background-size: cover;
             /* Make the background image cover the entire container */
@@ -599,9 +599,7 @@
         
     
     @media only screen and (max-width: 900px) {
-        * {
-                outline: 1px solid red;
-            }
+       
         body {
                 height:100%;   
                 font-family: 'Monserrat', sans-serif;
