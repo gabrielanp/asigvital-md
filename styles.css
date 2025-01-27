@@ -61,26 +61,22 @@
     }
 
     .contact-buttons-container {
+         margin-top: 1em; /* Add space between text and the contact box */
         display: flex;
-        /* Adjust as needed for spacing */
+        justify-content: center; /* Center the contact button */
+        width: 100%; /* Ensure it spans the container width */
     }
     
     .contact-email {
-        text-align: center;
-        margin-left: 2cm;
-        margin-right: 0.5cm;
-        padding: 8px;
-        font-size: 1em;
-        font-weight: normal;
-        border: 2px solid #06021f;
-        background-color: #06021f;
-        box-sizing: border-box;
-        border-radius: 2px;
-        display: flex;
-        align-items: center;
-       
-        width: 180px;
-        height: 50px;
+           text-align: center;
+            font-size: 1em;
+            font-weight: bold;
+            background-color: #06021f;
+            color: #fff;
+            padding: 0.8em;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+            width: auto; /* Adjust width automatically to fit content */
     }
     .contact-email:hover{
         box-shadow: 10px 10px 10px rgb(125, 128, 163);
@@ -152,6 +148,7 @@
         margin-top: 0em;
     }
    .block {
+    margin-top:2em;
     background-color: rgba(255, 255, 255, 0.7); /* White with 70% transparency */
     display: flex;
     justify-content: center; /* Center the content horizontally */
@@ -187,10 +184,10 @@
             font-style: bolder;
             font-style: italic;
             color: #0d0452;
-            margin-left: 2cm;
-            margin-top: 0%;
-            padding: 0%;
-            width: 400px;
+            margin: 0 auto; /* Center horizontally */
+            padding: 0.5em 0; /* Add some space above and below */
+            width: 100%; /* Let it adapt to the container */
+            max-width: 600px; /* Optional: Limit the text width for readability */
 
         }
  .viitorul {
