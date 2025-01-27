@@ -666,7 +666,13 @@
         background-color: #4636c5;
         color: white;
     }
-
+    .slogan,
+        .slogan1,
+        .viitorul {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
       /* Slog Section */
     .slog {
         background-color: #fff;
