@@ -11,15 +11,19 @@
         color: #333;
         background-attachment: fixed;
     }
+    
+    
     .background-container {
             background-image: url('pexels-radio-photo-patrika-sathi-320381513-136842461.jpg');
             /* Set background image for the container */
             background-size: cover;
             /* Make the background image cover the entire container */
-            background-position: center top;
+            background-position: center ;
             /* Center the background image horizontally and start from the top */
             background-repeat: no-repeat;
             /* Do not repeat the background image */
+            height: 100vh; /* Set the height to fill the viewport */
+            width: 100%
     }
    
     header {
@@ -598,7 +602,7 @@
 
         
     
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
        
         body {
                 height:100%;   
@@ -623,6 +627,8 @@
                     /* Center the background image horizontally and start from the top */
                     background-repeat: no-repeat;
                     /* Do not repeat the background image */
+                    height: 100vh; /* Set the height to fill the viewport */
+                    width: 100%
         }
         .social-icon {
             display: inline-block;
