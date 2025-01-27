@@ -159,7 +159,7 @@
    .block {
     display: flex;
     align-items: center;
-    padding-left: 0em; /* Adjusted to remove excessive right shift */
+    padding-left: 1em; /* Adjusted to remove excessive right shift */
     padding-right: 0em; /* Adjusted for balanced spacing */
     height: 500px;
     width: 900px;
