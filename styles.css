@@ -295,9 +295,7 @@
         justify-content: space-between;
         margin-bottom:1em;
     }
-    .insurances, .purple-block {
-    outline: 1px solid red; /* Temporary: To visualize spacing */
-}
+    
 
     .insurance-block {
         height: 400px;
@@ -898,6 +896,7 @@
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
             gap: 0px; /* Adjust the gap between grid items */
             /* Display insurance blocks next to each other */
+            height: 200px;
             
         }
         
