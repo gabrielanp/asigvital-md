@@ -887,12 +887,12 @@
     
         .insurances {
             text-align: center;
-            padding: 1em;
+            padding: 0em;
             background-color: #ffffff;
             display: flex;
             height: 210px;
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-            gap: 1px; /* Adjust the gap between grid items */
+            gap: 0px; /* Adjust the gap between grid items */
             /* Display insurance blocks next to each other */
             
         }
